@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table&Form</title>
+</head>
+
+<body>
+    <h1>Rendre vos tableaux et formulaire accesible</h1>
+
+    <div>
+        <h2>Meilleur pratique pour rendre vos tableau accesible</h2>
+        <p>Première bonne pratique à integrer est l'utilisation de legend de tableau nottament avec la balise
+            <b>&lt;caption&gt;</b>.</p>
+        <p> <b>scope</b> attribut permet de définir un element est un en-tête de ligne ou de colonne</p>
+        <p>example :</p>
+        <pre>
+            <code>
+                 &lt;thead&gt;
+                    &lt;tr&gt;
+      <!-- Now they have scope -->
+                        &lt;th scope="col"&gt;Name&lt;/th&gt;
+                        &lt;th scope="col"&gt;Age&lt;/th&gt;
+                        &lt;th scope="col"&gt;Type&lt;/th&gt;
+                    &lt;/tr&gt;
+                 &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;th scope="row"&gt;Nora&lt;/th&gt;
+                         &lt;td&gt;5&lt;/td&gt;
+                         &lt;td&gt;Dog&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            </code>
+        </pre>
+        <p>Concernant la largeur des cellules, il est recommandé d'éviter les valeurs fixes. Privilégiez plutôt les valeurs relatives, comme les pourcentages. Évitez également de définir la hauteur des cellules. Cela permettra aux utilisateurs d'ajuster la taille du texte selon leurs besoins.</p>
+        <p>Et enfin, vous devez laisser le navigateur déterminer la largeur du tableau dans la mesure du possible, afin de réduire le besoin de défilement horizontal.</p>
+    </div>
+
+    <div>
+        <h2>Pourquoi est-il important que les entrées aient une étiquette associée ?</h2>
+        <p>Ils aident les lecteurs d’écran à décrire le but des champs de saisie.</p>
+        <p>Les étiquettes aident les personnes handicapées, rendent les formulaires plus conviviaux pour tous et, en fin de compte, améliorent les taux de conversion des formulaires.</p>
+        <p>Comme on l'a vu dans la section des formulaire ou il y'a deux façons d'associer un input à un label un petit rappel s'impose.</p>
+        <p>Le <b>for</b> attribut du label element est associé à l'attribut <b>id</b> de l'<b>input</b> element.</p>
+        <p>Cette connexion permet aux lecteurs d'écran d'annoncer le <b>label</b> moment où l'élément <b>input</b> est actif, permettant ainsi aux utilisateurs de comprendre l'objectif de l'élément input.</p>
+        <p>Associer des libellés à tous les champs de saisie est également bénéfique pour le référencement. Grâce à des libellés appropriés, les moteurs de recherche comprendront mieux le contenu de la page, ce qui aura un impact positif sur son classement dans les résultats de recherche.</p>
+        <p><strong>Tips:</strong> Il est important de comprendre que vous créez du contenu pour les utilisateurs, et non pour les moteurs de recherche. Veillez donc à ce que les libellés soient aussi clairs et descriptifs que possible. </p>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body{
+    margin:0;
+}
+.navbar {
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.navbar a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar:hover{
+    background-color: aliceblue;
+}
+
+.navbar a:active{
+      background-color: #04AA6D;
+  color: white;
+}
+
+
+ul{
+   list-style-type:none;  
+   margin: 0;
+   padding: 0;   
+   width: 25%;
+   background-color: antiquewhite;
+   position: fixed;
+   height: 100%;
+   overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+li a:hover{
+    background-color: #555;
+    color:white;
+}
+
+.contenue {
+    margin-left:30%;
+    padding: 1px 16px;
+    
+}
+

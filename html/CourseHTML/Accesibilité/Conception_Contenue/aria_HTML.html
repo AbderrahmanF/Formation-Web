@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aria et HTML</title>
+</head>
+
+<body>
+    <h1>ARIA et HTML</h1>
+    <p>connaitre les <b>applications WEB enrichies accessibles (ARIA)</b></p>
+    <p> ARIA est un ensemble d'attribut que tu peux ajouter aux elements HTML pour améliorer l'accessibilité </p>
+    <p>Ces attributs communiquent le rôle, l'êtat et la propriété aux technologies d'assistance à l'aide des API
+        d'accessibilité disponibles dans les navigateurs moderne cette communication s'effectue via l'arborescence
+        d'Accesibilité.</p>
+    <div>
+        <h3>arborescence d'accessibilité</h3>
+        L'arborescence d'accessibilité est créée par le navigateur et basée sur l'arborescence DOM (Document Object
+        Model) standard. Comme l'arborescence DOM, l'arborescence d'accessibilité contient des objets représentant tous
+        les éléments de balisage, les attributs et les nœuds de texte. L'arborescence d'accessibilité est également
+        utilisée par les API d'accessibilité propres à la plate-forme pour fournir une représentation que les
+        technologies d'assistance peuvent comprendre
+    </div>
+
+    <div>
+        Les trois principales caractéristiques d'ARIA sont:
+        <ul>
+            <li>Les rôles : définissent ce qu'est ou fait un élément sur la page ou dans l'application. </li>
+            <li>Les propriéte : expriment les caractéristiques ou les relations d'un objet.</li>
+            <li>Les états et les valeurs : définissent les conditions ou valeurs de données actuelles associées à
+                l'élément.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Quand utilisée ARIA</h3>
+        <p>
+        <ol>
+            <li>N'utiliser pas Aria</li>
+            <p>les pages d'accueil avec ARIA présentaient en moyenne 70% d'erreurs détectées en plus que celles sans ARIA, principalement en raison d'une implémentation incorrecte des attributs ARIA</p>
+            <li>N'ajoute pas d'ARIA(Inutile) au code HTML</li>
+            <li>Toujours proposer la navigation avec le clavier</li>
+            <li> Ne masquez pas les éléments sélectionnables</li>
+            <li>Utilisez des noms accessibles pour les éléments interactifs</li>
+        </ol>
+        </p>
+    </div>
+
+</body>
+
+</html>

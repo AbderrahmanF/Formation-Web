@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappel des notion global sur l'accessibilité</title>
+</head>
+<body>
+        <h1>Rappel des notion global sur l'accessibilité</h1>
+        
+        <div>
+            <h2>Introduction à l'accessibilité</h2>
+            <p><b>Règles pour l'accessibilité des contenus Web</b>  Les Règles pour l'accessibilité des contenus Web (WCAG) constituent un ensemble de directives visant à rendre les contenus Web plus accessibles aux personnes handicapées. Les quatre principes des WCAG sont : POUR (Perceptible, Exploitable, Compréhensible et Robuste)</p>
+        </div>
+
+        <div>
+            <h2>Technologie d'assistance pour l'accessibilité</h2>
+            <ul>
+                <li><b>Lecteurs d'écran</b> : logiciels qui lisent à voix haute le contenu d'un écran d'ordinateur. Ils sont utilisés par les personnes aveugles ou malvoyantes pour accéder au web.</li>
+                <li><b>Claviers à grand texte ou en braille</b> : utilisés par les personnes malvoyantes pour accéder au Web.</li>
+                <li><b>Loupes d'écran</b> :  Logiciels permettant d'agrandir le contenu d'un écran d'ordinateur. Elles sont utilisées par les personnes malvoyantes pour accéder au web.</li>
+                <li><b>Dispositifs de pointage alternatifs</b> : utilisés par les personnes à mobilité réduite pour accéder au Web. Cela inclut des dispositifs tels que les joysticks, les trackballs et les pavés tactiles.</li>
+                <li><b>Reconnaissance vocale</b> : Utilisée par les personnes à mobilité réduite pour accéder au web, elle permet aux utilisateurs de contrôler un ordinateur à la voix.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Outils d'audit d'accessibilité</h2>
+            <p><b>Outils d'accessibilité courants</b> : Google Lighthouse, Wave, IBM Equal Accessibility Checker et axe DevTools sont quelques-uns des outils d'accessibilité courants utilisés pour auditer l'accessibilité d'un site Web.</p>
+        </div>
+
+        <div>
+            <h2>Meilleures pratiques en matière d'accessibilité</h2>
+            <ul>
+                <li><b>Structure de titres appropriée</b> : utilisez des niveaux de titres appropriés pour créer une structure logique pour votre contenu. Cela permet aux utilisateurs de technologies d'assistance de mieux comprendre le contenu de votre site web.</li>
+                <li><b>Accessibilité et tableaux</b> : Lorsque vous utilisez des tableaux, utilisez l' th élément pour définir les cellules d'en-tête et l' td élément pour définir les cellules de données. Cela permet aux utilisateurs de technologies d'assistance de comprendre la structure du tableau. Cet caption élément permet d'écrire la légende (ou le titre) d'un tableau, afin que les utilisateurs, notamment ceux qui utilisent des technologies d'assistance, puissent rapidement comprendre l'objectif et le contenu du tableau</li>
+                <li><b>Importance d'associer une étiquette aux entrées</b> : et élément permet <b>label</b> d'associer des étiquettes aux entrées du formulaire. Cela permet aux utilisateurs de technologies d'assistance de comprendre l'objectif de l'entrée.</li>
+                <li><b>Importance d' alt un texte de qualité</b> : utilisez cet <b>alt</b> attribut pour fournir une alternative textuelle aux images. Cela permet aux utilisateurs de technologies d'assistance de comprendre le contenu de l'image.</li>
+                <li><b>Importance d'un texte de lien de qualité</b> : utilisez un texte descriptif pour aider les utilisateurs à comprendre l'objectif du lien. Cela permet aux utilisateurs de technologies d'assistance de comprendre l'objectif du lien.</li>
+                <li><b>Bonnes pratiques pour rendre les contenus audio et vidéo accessibles</b> : Fournissez des sous-titres et des transcriptions pour les contenus audio et vidéo afin de les rendre accessibles aux personnes malentendantes. Fournissez également des descriptions audio pour les contenus vidéo afin de les rendre accessibles aux personnes malvoyantes.</li>
+                <li><b>tabindex Attribut</b> : permet de rendre les éléments accessibles et de définir l'ordre de navigation au clavier. Il est important de ne jamais utiliser cet <b>tabindex</b> attribut avec une valeur supérieure à 0. </li>
+                <li><b>accesskey Attribut</b> :  permet de définir un raccourci clavier pour un élément. Cela peut faciliter la navigation sur le site web pour les utilisateurs à mobilité réduite.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>WAI-ARIA, rôles et attributs</h2>
+            <ul>
+                <li><b>WAI-ARIA</b> : Web Accessibility Initiative - Accessible Rich Internet Applications (WAI-ARIA) est un ensemble d'attributs pouvant être ajoutés aux éléments HTML pour améliorer l'accessibilité. Il fournit des informations complémentaires aux technologies d'assistance sur l'objectif et la structure du contenu.</li>
+                <li><b>Rôles ARIA</b> :  ensemble de rôles prédéfinis pouvant être ajoutés aux éléments HTML pour en définir l'objectif. Cela permet aux utilisateurs de technologies d'assistance de comprendre le contenu du site web. Exemples : <b>role="tab"</b> , <b>role="menu"</b> et <b>role="alert"</b>.</li>
+            </ul>
+
+            <p><b>aria-label</b> et <b>aria-labelledby</b> attributs : ces attributs permettent de donner à un élément un nom programmatique (ou accessible), ce qui aide les utilisateurs de technologies d'assistance (comme les lecteurs d'écran) à comprendre son objectif. Ils sont souvent utilisés lorsque l'étiquette visuelle d'un élément est une image ou un symbole plutôt qu'un texte. <b>aria-label</b> Ils permettent de définir le nom directement dans l'attribut et <b>aria-labelledby</b> de référencer du texte existant sur la page.</p>
+            <p><b>aria-hidden</b> : permet de masquer un élément aux technologies d'assistance telles que les lecteurs d'écran. Par exemple, cela peut servir à masquer des images décoratives qui n'apportent aucun contenu significatif.</p>
+            <p><b>aria-expanded</b> :  utilisé pour transmettre l'état d'une fonction de bascule (ou de divulgation) aux utilisateurs de lecteurs d'écran.</p>
+            <p><b>aria-live</b> : utilisé pour indiquer que le contenu d'un élément est suffisamment important pour nécessiter que toute modification soit immédiatement annoncée aux utilisateurs de lecteurs d'écran</p>
+        
+            <p>États ARIA courants : les états ARIA courants incluent
+                <ul>
+                    <li><b>aria-haspopup</b></li>
+                    <li><b>aria-checked</b></li>
+                    <li><b>aria-disabled</b></li>
+                    <li><b>aria-selected</b></li>
+                </ul>
+                Ces attributs peuvent être utilisés pour indiquer l'état d'un élément et aider les personnes utilisant des technologies d'assistance à comprendre le contenu du site Web.
+            </p>
+            <p><b>aria-haspopup</b> : cet état indique qu'un élément interactif déclenchera une fenêtre contextuelle lorsqu'il sera activé. Il ne peut être utilisé que si la fenêtre contextuelle possède l'un des rôles suivants :
+            <ul>
+                <li><b>menu</b></li>
+                <li><b>listbox</b></li>
+                <li><b>tree</b></li>
+                <li><b>grid</b></li>
+                <li><b>dialog</b></li>
+            </ul>
+            La valeur de <b>aria-haspopup</b> doit être l'un de ces rôles ou true, qui est identique à menu            
+        </p>
+
+        <p><b>aria-checked</b> : cet attribut permet d'indiquer si un élément est coché. Il est généralement utilisé lors de la création de cases à cocher, de boutons radio, de commutateurs et de listes déroulantes personnalisés.</p>
+        <p><b>aria-disabled</b> : Cet état est utilisé pour indiquer qu'un élément est désactivé uniquement pour les personnes utilisant des technologies d'assistance, telles que les lecteurs d'écran.</p>
+        <p><b>aria-selected</b> : cet état indique qu'un élément est sélectionné. Vous pouvez l'utiliser sur des contrôles personnalisés comme une interface à onglets, une liste déroulante ou une grille.</p>
+        <p><b>aria-controls</b> : permet d'associer un élément à un autre élément qu'il contrôle. Cela permet aux utilisateurs de technologies d'assistance de comprendre la relation entre les éléments.</p>
+        <p><b>aria-describedby</b>  Utilisé pour fournir des informations supplémentaires sur un élément en l'associant à un autre élément contenant ces informations. Cela permet aux utilisateurs de lecteurs d'écran d'accéder immédiatement aux informations supplémentaires lorsqu'ils naviguent vers l'élément. L'utilisation courante consiste à associer des instructions de formatage à une saisie de texte ou un message d'erreur à une saisie après une soumission de formulaire non valide.</p>
+        <p><b></b></p>
+        </div>
+
+    </body>
+</html>

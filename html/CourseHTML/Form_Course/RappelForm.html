@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappel Notion de formulaire et table</title>
+</head>
+
+<body>
+    <h1>Rappel de la notion de formulaire</h1>
+    <h2>Comment fonctionne les formulaire ?</h2>
+
+    <p>cet <b>form</b> element HTML permet de collecter des informations sur les utilisateurs, telles que leurs noms et
+        adresses e-mail.</p>
+    <p>example : </p>
+    <pre>
+        <code>
+            &lt;form method="value" action="URL"&gt;
+                input elemment go here
+            &lt;/form&gt;
+        </code>
+    </pre>
+    <p>cet <b>method</b> attribut est utiliser pour spécifier la méthode HTTP à utiliser lors de l'envoie en général <b>GET</b> ou <b>POST</b> </p>
+    <p>Cet <b>action</b> attribut spécifie ou les données du formulaire seront envoyée après soumission.</p>
+    <p>Pour collecter des informations spécifique, comme les noms, mail, etc...</p>
+    <p>Vous utiliserez un <b>input</b> élément</p>
+    <p><b>input</b> elements sont des éléments vide et ne possèdent pas de balise de fermeture. L'<b>type</b> attributs
+        définit le type de donnée attendu de l'utilisateur</p>
+
+    <p>deux type d'utilisation de la balise <b>label</b>.</p>
+
+    <div>
+        <h3>Imbrication d'un élément input dans un label</h3>
+        <p>on va crée une association <em>implicite</em> entre le champ <b>label</b> et <b>input</b>.</p>
+        <p>Le terme "implicite" désigne une information comprise ou déduite sans nécessité d'énoncé explicite ni de
+            définition par des attributs ou éléments supplémentaires donc pas besoin forcément de <b>for</b> attributs
+        </p>
+    </div>
+
+    <div>
+        <h3>Association explicite label et input</h3>
+        <p>Pour associer explicitement un élément <b>label</b> à un champ <b>input</b> vous pouvez utiliser l'<b>for</b>
+            attribut</p>
+        <p>Lors de l'utilisation d'une association explicite, les valeurs des <b>for</b> attributs et <b>id</b> doivent
+            être identique</p>
+    </div>
+    <p>Par conséquent le rôle de <b>for</b> attribut à l'intérieur de label permet d'associer explicitement un label à
+        un input</p>
+
+
+    <div>
+        <h2>Quels sont les différent type de bouton est quand les utilisez ?</h2>
+        <p><b>button</b> élement permet d'effectuer une action particulière lorsqu'il est activé </p>
+        <p>example :</p>
+        <button>Start Game</button>
+        <p><b>button</b> élément possède un <b>type</b> attribut est le <b>button</b> type </p>
+        <pre>
+            <code>
+                &lt;button type="button"&gt;Show Alert&lt;/button&gt;
+                &lt;button type="reset"&gt;Reset form&lt;/button&gt;
+                &lt;button type="submit"&gt;Submit form&lt;/button&gt;
+            </code>
+        </pre>
+        <p>Par défault, le bouton n'a aucune action lorsqu'il est activé. Cependant, vous pouvez ajouter du code JS pour
+            le rendre interactif.</p>
+        <p><b>button</b> type peux également prendre deux autre valeurs : </p>
+        <ul>
+            <li><b>submit</b> : envoie les données du formulaire au serveur</li>
+            <li><b>reset</b> : réinitialise les champs du formulaire à leurs valeurs par défaut</li>
+        </ul>
+        <p>Une autre façon de crée un bouton en HTML est d'utiliser <b>input</b></p>
+        <pre>
+            <code>
+                &lt;input type="button" value="click me"&gt;
+            </code>
+         </pre>
+        <p>le <b>type</b> peut prendre la valeur <b>submit</b>, <b>reset</b>, <b>button</b>, etc...</p>
+        <p>L'<b>value</b> élément permet d'afficher le texte du bouton.</p>
+    </div>
+
+    <div>
+        <h3>Quel différence entre les éléments <b>input</b> et <b>button</b> </h3>
+        <p><b>input</b> sont des éléments vides, ce qui signifie qu'ils ne peuvent pas avoir de noeuds enfants, comme du
+            texte et n'ont qu'une balise de début</p>
+        <p>En revanche <b>button</b> éléments offre plus de flexibilité, car il permet d'y imbriquer du texte, des
+            images et des icônes.</p>
+    </div>
+
+
+    <div>
+        <h3>Qu'est-ce que la validation de formulaire côté client dans les formulaires HTML ?</h3>
+        <p>Lorsqu'un utilisateur remplit un formulaire sur votre site web, il est important qu'il renseigne toutes les
+            informations nécessaires au bon format.</p>
+        <p>Les contrôles de formulaire HTML, comme les entrées, intègrent de nombreuses fonctions de validation
+            permettant de vérifier les données invalides. Cela permet de garantir que l'utilisateur corrige ces erreurs
+            avant que les informations ne soient soumises et traitées par le serveur.</p>
+        <p>Le terme « côté client » désigne tout ce qui se passe sur l'ordinateur ou l'appareil de l'utilisateur, comme
+            la partie d'un site web ou d'une application avec laquelle vous interagissez directement. Cela inclut la
+            mise en page, le design et toutes les fonctionnalités interactives.</p>
+        <p>Le terme « côté serveur » désigne tout ce qui se passe sur le serveur, l'ordinateur ou le système qui héberge
+            le site web ou l'application. Cela inclut le traitement des données, l'exécution des applications et la
+            gestion des requêtes provenant de l'appareil de l'utilisateur.</p>
+        <p>Si la validation côté client est importante, une validation côté serveur est également nécessaire pour plus
+            de sécurité. Les utilisateurs malveillants peuvent contourner les contrôles côté client ; des mesures
+            robustes côté serveur sont donc essentielles</p>
+    </div>
+
+    <div>
+        <h3>Les différente forme de validation d'un formulaire</h3>
+        <p>utiliser l'<b>required</b> attribut dans les entrées. Cet <b>required</b> attribut spécifie que l'utilisateur
+            doit remplir cette partie du formulaire avant de l'envoyer.</p>
+        <p>d'autre forme de validation pour les saisie par e-mail utilisent les attributs <b>minlength</b> et
+            <b>maxlength</b> </p>
+    </div>
+
+    <div>
+        <h3>Quels sont les différents états de forme et pourquoi sont-ils importants ?</h3>
+        <p>En HTML, les contrôles de formulaire, comme les entrée peuvent être à différentes étapes ou condition comme :
+            <ul>
+                <li><b>Focused</b></li>
+                <li><b>readonly</b></li>
+                <li><b>disabled</b></li>
+            </ul>
+        </p>
+
+        <p>Première état est considérer comme <b>défault</b> état actuel. Par défault une add mail est vide.</p>
+        <p>Lorsque l'utilisateur clique sur un contrôle de formulaire ou le sélectionne avec la touche Tabulation du clavier, cela signifie qu'il est dans l'<b>focused</b> état. Lorsqu'une entrée est dans l'<b>focused</b> état  la plupart des navigateurs l'entourent d'une bordure bleue.</p>
+        <p>Un autre état du formulaire est <b>disabled</b> état . Cet état indique aux utilisateurs qu'une entrée ne peut pas être activée ou sélectionnée. Si l'utilisateur tente de cliquer sur l'entrée, le focus ne sera pas activé.</p>
+        <p>Un autre type d'état de formulaire est <b>readonly</b> état. Il se produit lorsqu'un contrôle de formulaire, comme une entrée, n'est pas modifiable par l'utilisateur,  Cet <b>value </b> attribut permet de définir la valeur affichée dans le champ de saisie. Si vous cliquez sur le champ de saisie, vous ne pourrez pas modifier la valeur existante.</p>
+    </div>
+
+    <p>Utilisation de la balise <b>fieldset</b> pour regrouper certain input d'un formulaire </p>
+    <p>Il est commun d'utiliser legend pour marquer le titre de l'encadrer fieldset.</p>
+    <p>L'attribut <b>name</b> est utilisé pour identifier les données du formulaire après qu'elles ont été soumises au serveur.</p>
+
+    <div>
+        <h3>Utilisation du radio button et checkbox</h3>
+        <p>on doit grouper les radios button avec le même <b>name</b> ce qui va nous permettre d'en sélectionner q'un</p>
+        <p>Quand tu veux réaliser une sélection multiple on utilise <b>checkbox</b> la <b>value</b> attribut est utiliser pour specifier la valeur qui va être envoyer au serveur quand le form sera envoyé et tu peux utiliser également l'attribut <b>checked</b> pour cocher par défault.</p>
+    </div>
+
+    <div>
+        <h3>Différence avec l'attribut id ?</h3>
+        <p><b>name</b> : Pour l'envoi des données et le traitement</p>
+        <p><b>id</b> :  Pour l'identification unique dans le DOM et l'association avec &lt;label&gt;</p>
+    </div>
+
+
+    <div>
+        <h2>Procesus d'envoie du formulaire.</h2>
+        <p>Quand le formulaire est soumis, les données sont envoyées sous forme de paires clé-valeur</p>
+        <p>Le serveur utilise l'attribut <b>name</b> pour récupérer les valeurs :</p>
+        <p>Sans l'attribut <b>name</b>, les données du formulaire ne seront pas envoyées lors de la soumission !</p>
+    </div>
+
+        <p>quand vous voullez que l'utilisateur choisise un élément d'une sélection on réalise un dropdown menu(menu à liste déroulante)</p>
+        <p>pour chosir par défault une sélection vous utilisez l'attribut <b>selected</b> dans option</p>
+    
+        <p>Si vous voullez qu'un utilisateur tape un commentaire long.  utilisez l'élement <b>textarea</b> car il permet aux utilisateur de taper sur plus d'une ligne.</p>
+        <p>l'attribut <b>rows</b> de textarea permet de spécifier la hauteur visible de la zone de texte et l'attribut <b>cols</b> permet de spécifier la largeur visible de la zone de texte.</p>
+
+
+    <div>
+        <h2>Review HTML Form element and attribute</h2>
+        <ul>
+            <li><b>form </b>element : utilisé pour créer un formulaire HTML pour la saisie de l'utilisateur.</li>
+            <li><b>Action </b>attribut :  utilisé pour spécifier l'URL où les données du formulaire doivent être envoyées.</li>
+            <li><b>method </b>attribut : permet de spécifier la méthode HTTP à utiliser lors de l'envoi des données du formulaire. Les méthodes les plus courantes sont <b>GET</b> et <b>POST</b>.</li>
+            <li><b>input </b>element : utilisé pour créer un champ de saisie pour la saisie utilisateur.</li>
+            <li><b>type </b>attribut :utilisé pour spécifier le type de champ de saisie. Ex <b>text, email, number, radio, checkbox,</b> etc.</li>
+            <li><b>placeholder</b> attribute :utilisé pour afficher un indice à l'utilisateur pour lui montrer ce qu'il doit saisir dans le champ de saisie.</li>
+            <li><b>value</b> attribut :  permet de spécifier la valeur de l'entrée. Si l'entrée possède un <b>button</b> type, l' <b>value</b> attribut permet de définir le texte du bouton.</li>
+            <li><b>name</b> attribut : permet d'attribuer un nom à un champ de saisie, qui sert de clé lors de la soumission des données du formulaire. Pour les boutons radio, leur attribuer le même nom <b>name</b> les regroupe, de sorte qu'une seule option du groupe puisse être sélectionnée à la fois.</li>
+            <li><b>size</b> attribut : utilisé pour définir le nombre de caractères qui doivent être visibles lorsque l'utilisateur tape dans la saisie.</li>
+            <li><b>min</b> attribut :  peut être utilisé avec des types d'entrée tels que <b>number</b> pour spécifier la valeur minimale autorisée dans le champ de saisie.</li>
+            <li><b>max</b> attribut : peut être utilisé avec des types d'entrée tels que <b>number</b> pour spécifier la valeur maximale autorisée dans le champ de saisie.</li>
+            <li><b>minlength</b> attribut : utilisé pour spécifier le nombre minimum de caractères requis dans un champ de saisie.</li>
+            <li><b>maxlength</b> attribut : utilisé pour spécifier le nombre maximal de caractères autorisés dans un champ de saisie.</li>
+            <li><b>required</b> attribut :  utilisé pour spécifier qu'un champ de saisie doit être rempli avant de soumettre le formulaire.</li>
+            <li><b>disabled</b> attribut : utilisé pour spécifier qu'un champ de saisie doit être désactivé.</li>
+            <li><b>readonly</b> attribut :  utilisé pour spécifier qu'un champ de saisie est en lecture seule.</li>
+            <li><b>label</b> element : utilisé pour créer une étiquette pour un champ de saisie.</li>
+            <li><b>for</b> attribut :  utilisé pour spécifier à quel champ de saisie l'étiquette est destinée. </li>
+            <li><b>Association de formulaire implicite</b> :les entrées peuvent être associées à des étiquettes en enveloppant le champ de saisie à l'intérieur de l' <b>label</b> élément.</li>
+            <li><b>Association de formulaire explicite </b>: les entrées peuvent être associées à des étiquettes en utilisant l'<b>for</b> attribut sur l'<b>label</b> élément.</li>
+            <li><b>button</b> Element permet de créer un bouton cliquable. Un bouton peut également posséder un <b>type</b> attribut, qui permet de contrôler son comportement lorsqu'il est activé. Ex. : submit, reset, button.</li>
+            <li><b>fieldset</b> element : utilisé pour regrouper des entrées liées.</li>
+            <li><b>legend</b> element : utilisé pour ajouter une légende pour décrire le groupe d'entrées.</li>
+            <li><b>textarea</b> element : utilisé pour créer un champ de saisie de texte multiligne.</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

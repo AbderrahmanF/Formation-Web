@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+</head>
+
+<body>
+    <h1>HTML Iframe</h1>
+    <p>An HTML <b>iframe</b> is used to display a web page within a web page</p>
+    <p>What's it for?</p>
+    <p>
+    <ul>
+        <li>Afficher une vidéo Youtube</li>
+        <li>Afficher une carte Google Maps</li>
+        <li>Intégrer une autre page web</li>
+        <li>Afficher un PDF</li>
+        <li>Charger un contenu externe (ex: météo, calendrier,etc) </li>
+    </ul>
+    </p>
+
+    <div>
+        <h2>HTML Iframe Syntax</h2>
+        <p>The HTML &lt;iframe&gt; tag specifies an inline frame.</p>
+        <p>An inline frame is used to embed another document within the current HTML document.</p>
+        <div>
+            <p>Example:</p>
+            <p> &lt; iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"&gt; &lt;/iframe&gt;</p>
+            <p> &lt;p&gt; &lt;a href="https://www.w3schools.com" target="iframe_a">W3Schools.com&lt;/a&gt; &lt;/p&gt;
+            </p>
+        </div>
+        <div>
+            <iframe src="../../Home.html" name="iframe" title="Iframe" height="200px" width="100%"></iframe>
+            <p><a href="../../Home.html" target="iframe">Home Page</a></p>
+        </div>
+        <div>
+            <p>Example: </p>
+            <p> &lt;iframe
+                src="video-url"
+                width="width-value"
+                height="height-value"
+                allowfullscreen&gt;
+                &lt;/iframe&gt;
+            </p>
+
+        </div>
+    </div>
+
+
+
+    <div>
+        <p>Intégration d'une carte</p>
+        <iframe width="425" height="350"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=3.006134033203125%2C6.150112578753815%2C3.6357879638671875%2C6.749850810550778&amp;layer=mapnik"
+            style="border: 1px solid black">
+        </iframe>
+        <br />
+        <small>
+            <a href="https://www.openstreetmap.org/#map=11/6.4501/3.3210">
+                View Larger Map
+            </a>
+        </small>
+    </div>
+
+
+
+</body>
+
+</html>

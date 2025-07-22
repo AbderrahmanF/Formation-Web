@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction JS</title>
+    <link rel="icon" href="../../img/js.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Introduction Java Script</h1>
+
+    <p>Js peut mettre à jour et modifier à la fois HTML et CSS</p>
+
+
+    <div>
+        <h2>modification contenue HTML</h2>
+        <p id="demo">L'une des nombreuses méthodes HTML JavaScript est getElementById()</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'> CLICK
+            ME!</button>
+    </div>
+    <div>
+        <h2>modification Contenue HTML/CSS</h2>
+        <p id="demo2">Java Script modification</p>
+        <button type="button" onclick='document.getElementById("demo2").style.fontSize="35px"'> Click me</button>
+    </div>
+
+    <div>
+        <h1>Java Script Where to</h1>
+        <h2>La balise &lt;script&gt;</h2>
+        <p>En HTML, le code JavaScript est inséré entre les balises <b>&lt;script&gt;</b> et <b>&lt;/script&gt;</b>.</p>
+        <div>
+            <h2>Fonctions et événements JavaScript</h2>
+            <p>un JavaScript <b>function</b> est un bloc de code JavaScript, qui peut être exécuté lorsqu'il est «
+                appelé »</p>
+            <p>une fonction peut être appelée lorsqu’un événement se produit, comme lorsque l’utilisateur clique sur un
+                bouton.</p>
+        </div>
+        <div>
+            <h2>JavaScript dans &lt;head&gt; ou &lt;body&gt; </h2>
+            <p>Dans cet exemple, un JavaScript <b>function</b> est place dans la &lt;head&gt; section d'une page HTML
+            </p>
+            <p>Dans cet exemple, un JavaScript functionest placé dans la &lt;body&gt; section d'une page HTML.</p>
+        </div>
+        <div>
+            <h2>JavaScript externe</h2>
+            <p>Les script peuvent également être placé dans des fichier externe.</p>
+            <p>Les scripts externes sont pratiques lorsque le même code est utilisé dans de nombreuses pages Web
+                différentes.</p>
+            <p>Pour utiliser un script externe, placez le nom du fichier de script dans l' srcattribut (source) d'une
+                &lt;script&gt; balise</p>
+            <p>Example: &lt;script src="file.js"&gt;&lt;/script&gt;</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Java Script Output</h2>
+        <div>
+            <h3>Possibilité d'affichage du Javascript</h3>
+            <p>Js peut afficher des donnée de différentes manières
+            <ul>
+                <li>Ecrire dans un element HTML, en utilisant <b>innerHTML</b> ou <b>innerText</b>.</li>
+                <li>Ecrire dans la sortie HTML à l'aide de <b>document.write()</b></li>
+                <li>Ecrire dans une boite d'alerte, en utilisant <b>window.alert()</b>.</li>
+                <li>Ecriture dans la console du navigateur, en utilisant <b>console.log()</b>.</li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <h3>Utilisation de innerHTML</h3>
+            <p>Pour accéder à un élément HTML, vous pouvez utiliser la <b>document.getElementById(id)</b> méthode</p>
+            <p>utilisez l'<b>id</b> attribut pour identifier l'élément HTML.</p>
+            <p>Utiliser ensuite la <b>innerHTML</b> pour modifier le contenue HTML de l'element HTML.</p>
+            <h4>document.write()</h4>
+            <p>À des fins de test, il est pratique d'utiliser <b>document.write()</b>.</p>
+        </div>
+        <div>
+            <h3>window.alert()</h3>
+            <p>Vous pouvez utiliser une boîte d’alerte pour afficher des données :</p>
+            <p> Vous pouvez ignorer le <b>window</b> mot-clé. </p>
+            <p>En JavaScript, l'objet window est l'objet de portée globale. Cela signifie que les variables, propriétés
+                et méthodes lui appartiennent par défaut. La spécification du mot-clé est donc <b>window</b> facultative.</p>
+        </div>
+        <div>
+            <h3>Console Log</h3>
+            <p>à des fin de débogage, vous pouvez appeler la <b>console.log()</b> méthode dans le navigateur pour afficher les données.</p>
+        </div>
+        <div>
+            <h3>print jS</h3>
+            <p>js n'a pas d'objet de print ni de méthode d'impression.</p>
+            <p>la seule exception est que vous pouvez appeler la <b>window.print()</b> méthode dans le navigateur pour imprimer le contenue de la fenetre.</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

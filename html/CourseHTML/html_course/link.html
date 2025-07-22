@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+</head>
+
+<body>
+    <h1>HTML Links</h1>
+
+    <div>
+        <h2>HTML Links - Hyperlinks</h2>
+        <p>you can click on a link and jump to another document.</p>
+    </div>
+
+    <div>
+        <h2>HTML links - The target Attribute</h2>
+        <p>The "target" attribute specifies where to open the linked document </p>
+        <p>The "target" attribute can have one of the following values: </p>
+        <ul>
+            <li><b>_self</b> - default. Opens the document in the same window/tab as it was cliked </li>
+            <li><b>_blank</b> - Opens the document in a new window or tab</li>
+            <li><b>_parent</b> - Opens the document in the parent frame</li>
+            <li><b>_top</b> - Opens the document in the full body of the window</li>
+        </ul>
+    </div>
+
+
+    <div>
+        <h2>HTML Links - Use an image as a link</h2>
+        <p>To use an image as a link, just put the &lt;img&gt; tag inside the &lt;a&gt; tag</p>
+    </div>
+
+    <div>
+        <h2>Link to an email Address</h2>
+        <p>use <b>mailto:</b> inside the <b>href</b> attribute to create a link that opens the user's email program (to
+            let them send a new email).</p>
+        <p> example : <br> &lt;a href="mailto:email"&gt;text&lt;/a&gt;</p>
+    </div>
+
+    <div>
+        <h2>Button as a Link</h2>
+        <p>To use HTML button as a link, you have to add some JavaScript code.</p>
+        <p>JavaScript allows you to specify what happens at certain events, such as a click of a button</p>
+        <p>Example: <br>&lt;button onClick="docJS.location='file.asp'"&gt; buttonJS &lt;/button&gt;</p>
+    </div>
+
+    <div>
+        <h2>Link Title</h2>
+        <p>The <b>title</b> attribute specifies extra information about an element that appears when the mouse hovers
+            over it </p>
+    </div>
+
+    <div>
+        <h2>Chapter Summary</h2>
+        <ul>
+            <li>Use the &lt;a&gt; element to define a link</li>
+            <li>Use the <b>href</b> attribute to define the link address</li>
+            <li>use the <b>target</b> attribute to define where to open the linked document</li>
+            <li>Use the &lt;img&gt; element (inside &lt;a&gt;) to use an image as a link</li>
+            <li>use the <b>mailto:</b> scheme inside the <b>href</b> attribute to create a link that opens the user's
+                email program</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>HTML Links - Create Bookmark</h2>
+        <p>HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.</p>
+        <div>
+            <h3>Create a Bookmark in HTML</h3>
+            <p>Bookmarks can be useful if a web page is very long.</p>
+            <p>To create a bookmark - first create the bookmark, then add a link to it.</p>
+            <p>When the link is cliked, the page will scroll down or up to the location with the bookmark</p>
+            <p>An Example: first, use the id <br> &lt;h2 id="c4"&gt;chapter4&lt;/h2&gt;</p>
+            <p>Then, add a link to the bookmark (jumper to chapter4), from within the same page:</p>
+            <p>Example &lt;a href="#c4"&gt; jump to chapter4 &lt;/a&gt;</p>
+
+            <p>You can also add a link to a bookmark on another page:</p>
+            <p>example: <br> &lt;a href="page.html#c4"&gt; jump to chapter4 &lt;/a&gt;</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Chapter Summary</h2>
+        <ul>
+            <li>Use the <b>id</b> attribute (id="value) to define bookmarks in a page</li>
+            <li>Use the <b>href</b> attribute (href="#value") to link to the bookmark</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Lien CSS</h2>
+        <p>En CSS, les liens peuvent être stylisés de différente manières. Selon l'état dans lequel ils sont
+        <ul>
+            <li><b>a:link</b> - un lien normal, non visité</li>
+            <li><b>a:visited</b> - un lien que l'utilisateur a visité</li>
+            <li><b>a:hover</b> - un lien lorque l'utilisateur passe la souris dessus</li>
+            <li><b>a:active</b> - un lien au moment ou il est cliqué</li>
+        </ul>
+        </p>
+        <p><strong>Lors de la définition du style pour plusieurs états de lien, il existe certaines règles
+                d'ordre:</strong>
+        <ul>
+            <li>a:hover DOIT apparaître après a:link et a:visited</li>
+            <li>a:active DOIT venir après a:hover</li>
+        </ul>
+        </p>
+
+
+        <p> Cet exemple montre les différents types de curseurs (peut être utile pour les liens) : </p>
+        <ul>  <p><strong> style="cursor: value</strong></p>
+            <li> <span style="cursor: auto">auto</span></li>
+            <li><span style="cursor: crosshair">crosshair</span></li>
+            <li><span style="cursor: default">default</span></li>
+            <li><span style="cursor: e-resize">e-resize</span> </li>
+            <li><span style="cursor: help">help</span></li>
+            <li><span style="cursor: move">move</span></li>
+            <li><span style="cursor: n-resize">n-resize</span></li>
+            <li> <span style="cursor: ne-resize">ne-resize</span></li>
+            <li> <span style="cursor: nw-resize">nw-resize</span></li>
+            <li> <span style="cursor: pointer">pointer</span></li>
+            <li><span style="cursor: progress">progress</span></li>
+            <li> <span style="cursor: s-resize">s-resize</span></li>
+            <li> <span style="cursor: se-resize">se-resize</span></li>
+            <li> <span style="cursor: sw-resize">sw-resize</span></li>
+            <li><span style="cursor: text">text</span></li>
+            <li> <span style="cursor: w-resize">w-resize</span></li>
+            <li><span style="cursor: wait">wait</span></li>
+        </ul>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rappel Aria</title>
+</head>
+
+<body>
+    <h1>Rappel Aria</h1>
+
+    <div>
+        <h2>Quel est le but de WAI-ARIA et comment fonctionne-t-il ?</h2>
+        <p>Rendre accessible du contenu statique peut être relativement simple, mais rendre accessible du contenu
+            dynamique peut s'avérer plus complexe. C'est là qu'intervient WAI-ARIA.</p>
+        <p>WAI-ARIA signifie <b>"Web Accessibility Initiative - Accessible Rich Internet Applications"</b></p>
+        <p>Il s'agit d'une spécification qui améliore l'accessibilité des contenus dynamiques et des composants
+            d'interface utilisateur</p>
+        <p>WAI-ARIA fonctionne en introduisant un ensemble d'attributs que vous pouvez ajouter aux éléments HTML pour
+            fournir des informations sémantiques supplémentaires. Ces attributs sont classés en rôles, états et
+            propriétés.</p>
+        <p>Le rôle ARIA définit la fonction d'un élément au sein d'un site web ou d'une application web</p>
+    <pre>
+        <code>
+            &lt;div role="button"&gt;Click me&lt;/div&gt;
+        </code>
+    </pre>
+    <p>Ce faisant, vous indiquez aux technologies d'assistance que l'élément est un bouton. Cependant, les roles n'offrent aucune fonctionnalité, le simple fait de lui attribuer  <b>div</b> un <b>rôle</b> rôle <b>button</b> ne le fera pas agir comme un button, pour qu'il le fasse il faut integrer du CSS et JS apres il est préferable d'utiliser l'élément natif. <b>button</b> ou <b>Input</b> l'élement avec <b>type="button".</b></p>
+
+    <p>L'état ARIA décrit l'état actuel d'un élément, qui peut évoluer en fonction des interactions de l'utilisateur. L' <b>aria-expanded</b> attribut des sections réductibles en est un exemple</p>
+
+    <p>Encore une fois, il s'agit simplement d'une description de l'état ; aucune fonctionnalité n'est fournie. Vous devrez utiliser JavaScript pour modifier l'état de l'attribut lorsque l'utilisateur clique sur le bouton.</p>
+
+    <p>Les propriétés ARIA fournissent des détails supplémentaires sur les éléments. Par exemple, elles <b>aria-labelledby</b> permettent de lier un élément à une étiquette spécifique :</p>
+
+    <p>Pour tirer le meilleur parti de WAI-ARIA, essayez de vous en tenir au HTML natif autant que possible, car il offre généralement plus d'accessibilité dès le départ.</p>
+    <p>Utilisez WAI-ARIA uniquement lorsque le HTML est insuffisant, et n'oubliez pas de tester votre travail avec des technologies d'assistance comme des lecteurs d'écran, ou de faire tester votre travail par des personnes handicapées.</p>
+    </div>
+    
+
+    <div>
+        <h2>Quel sont les rôles ARIA</h2>
+        <p>ARIA signifie <b>Accessible Rich Internet Applications.</b></p>
+        <p>Les rôles ARIA précisent la signifiation sémantique des éléments HTML. Ils sont essentielle pour les personnes utilisant des technologies d'assistance, comme les lecteurs d'écran.</p>
+        <p>les sémantique ont déja un rôle ARIA attribué par défault alors que les élement non sémantique tels que <b>&lt;div&gt;</b> n'ont pas de rôle çela signifie que les lecteurs d'écran ne sauront pas l'interpreter l'objectif d'un élément &lt;div&gt; si on n'explique pas explicitement sont rôle.</p>
+        <p>Pour spécifier le rôle ARIA d'un élement. Il nous suffit d'ajouter <b>role</b> attribut comme çeci <strong>role="ARIA role"</strong> ou value est le nom d'un rôle dans la spécification ARIA.</p>
+        <p>à noter que la spécification d'un rôle sur un élément n'a qu'un seul effet: elle informe la technologie d'assistance de la fonction de l'élément.</p>
+        <p>c'est au dévelopeur d'ajouter un comportement au rôle </p>
+        <p>Voici les six catégories principales de rôles Aria
+            <ul>
+                <li>Rôles de la structure du document</li>
+                <li>Rôles des widgets</li>
+                <li>Rôles marquants</li>
+                <li>Rôles de la région en direct</li>
+                <li>Rôles de fenêtre</li>
+                <li>les rôles abstraits</li>
+            </ul>
+        </p>
+        <p>Les rôles de structure : de document définissent la structure globale de la page web. Grâce à ces rôles, les technologies d'assistance peuvent comprendre les relations entre les différentes sections et aider les utilisateurs à naviguer dans le contenu.</p>
+        <p>Cependant, la plupart des rôles de structure de document ne sont pas utilisés dans le développement Web moderne, car les navigateurs prennent déjà en charge des éléments HTML sémantiques équivalents, qui doivent être prioritaires dans la mesure du possible.</p>
+   
+        <p>Les rôles des widgets : définissent l'objectif et la fonctionnalité des éléments interactifs, comme les barres de défilement.</p>
+    
+        <p>Les rôles de repère(marquants) : classent et étiquettent les sections principales d'une page web. Les lecteurs d'écran les utilisent pour faciliter la navigation vers les sections importantes d'une page. Utilisez-les avec parcimonie afin de conserver une présentation générale simple et compréhensible</p>
+   
+        <p>Les rôles de région active : définissent des éléments dont le contenu évolue de manière dynamique. Ainsi, les lecteurs d'écran et autres technologies d'assistance peuvent annoncer les modifications aux utilisateurs malvoyants</p>
+        
+        <p>Les rôles de fenêtre : définissent des sous-fenêtres, comme des boîtes de dialogue modales contextuelles</p>
+
+        <p>les rôles abstraits : Ces rôles aident à organiser le document. Ils sont uniquement destinés à être utilisés en interne par le navigateur, et non par les développeurs. Vous devez donc savoir qu'ils existent, mais vous ne devez pas les utiliser sur vos sites web ou applications web.</p>
+    </div>
+
+
+    <div>
+        <h2>Quels sont les rôles des attributs aria-labelet ?aria-labelledby</h2>
+        <p>les attributs <b>aria-label</b> et <b>aria-labelledby</b> fournissent des informations cruciales sur les éléments de la page qui peuvent être flous ou invisibles.</p>
+        
+        <p><b>aria-label</b> est particulièrement utile pour les éléments sans texte visible, mais nécessitant néanmoins une description par les lecteurs d'écran. Par exemple, les boutons composés uniquement d'icônes doivent souvent aria-label communiquer leur fonction.</p>
+        <p><b>aria-labelledby</b> a la même fonction que <b>aria-label</b> attribut, mais au lieu de définir le texte directement dans l'attribut, on utilise une référence à un texte existant sur la page  Le texte existant doit posséder un id attribut, qui servira de valeur de référence dans l' <b>aria-labelledby</b> attribut</p>
+
+        <p>example :</p>
+        <pre>
+            <code>
+                &lt;input type="text" aria-labelledby="search-btn"&gt;           
+                &lt;button type="button" id="search-btn"&gt;Search&lt;/button&gt;
+            </code>
+        </pre>
+        <p> le texte du bouton sert d'étiquette pour la recherche. Les lecteurs d'écran annonceront l'entrée sous la forme Search, edit. Si vous décidez ultérieurement de remplacer le texte du bouton par Find, l'étiquette de l'entrée sera automatiquement mise à jour avec le nouveau texte, car elle fait référence au texte du bouton</p>
+
+        <ul>
+            <li>Si quelqu'un utilise un service de traduction pour traduire le contenu de votre page, le texte d'un <b>aria-label</b> attribut peut ne pas toujours être traduit.</li>
+            <li>L'utilisation <b>aria-labelledby</b> peut également aider à éviter une incompatibilité entre le texte de l'étiquette visible et l'étiquette invisible pour les utilisateurs de lecteurs d'écran, car la mise à jour du texte visible mettra automatiquement à jour l'étiquette invisible.</li>
+            <li><b>aria-labelledby</b> peut rendre beaucoup plus facile la création par programmation d'étiquettes invisibles complexes constituées de plusieurs sources de texte.</li>
+            <li><strong>Tips :</strong>  n'utilisez pas <b>aria-label</b> « and » <b>aria-labelledby</b> simultanément sur un même élément. Dans ce cas, l'étiquette invisible pour les lecteurs d'écran sera toujours déterminée par <b>aria-labelledby</b> et <b>aria-label</b> sera totalement ignorée.</li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Qu'est-ce que l'attribut aria-hidden et comment fonctionne-t-il ?</h2>
+
+        <p>Si on a besoin d'afficher du contenu tout en le masquant aux personne qui utilisent des technologie d'assistance (lecteurs d'ecran), on peut utiliser l'<b>aria-hidden</b> </p>
+        <p>utilisation : il nous suffit d'ajouter à l'élément HTML qu'on souhaite masquer et de définir ça valeur sur <b>TRUE</b> comme on peut le voir la : <b>aria-hidden="true"</b></p>
+        <p>Cet attribut masque l'élément et tous ses enfants de l'arborescence d'accessibilité, tout en les maintenant visibles sur la page</p>
+        <p>on peut les utiliser pour 
+            <ul>
+                <li>Icônes et images qui ont uniquement un but décoratif.</li>
+                <li>Contenu dupliqué.</li>
+            </ul>
+        </p>
+        <p>si le contenu doit être masquer à tous et pas seulement aux techno d'assitance on utiliser display CSS à none sur le menu pour le supprimer lorsqu'il est réduit.</p>
+        <p>ne jamais utiliser <b>aria-hidden</b> pour masquer un élément Accesible aux clavier car il ne supprime pas du DOM. ainsi les utilisateurs pouront acceder à l'element via la touche Tab mais leur lecteur d'ecran ne l'annoncera pas.</p>
+        <p>Example :  où nous masquons une icône de l'arborescence d'accessibilité en ajoutant l' aria-hiddenattribut avec une valeur de true.</p>
+        <p>Nous gardons uniquement le texte exposé aux technologies d'assistance pour éviter toute confusion qui pourrait résulter de la redondance d'avoir à la fois une icône et un texte pour le même objectif.</p>
+
+        <pre>
+            <code>
+                &lt;button&gt;
+                    &lt;i class="fa-solid fa-gear" aria-hidden="true"&gt;&lt;/i&gt;
+                    &lt;span class="label"&gt;Settings&lt;/span&gt;
+                &lt;/button&gt;
+            </code>
+        </pre>
+        <p>Vous n'avez pas besoin de l'utiliser <b>aria-hidden</b> lorsque : 
+        <ul>
+            <li>L'élément HTML possède déjà un <b>hidden</b> attribut.</li>
+            <li>L'élément ou l'ancêtre de l'élément est déjà masqué avec <b>display: none.</b></li>
+            <li>L'élément ou l'ancêtre de l'élément est déjà masqué avec <b>visibility: hidden.</b></li>
+        </ul>
+    </p>
+    <p>Dans ces trois cas, l'élément est déjà supprimé du DOM et donc masqué de l'arbre d'accessibilité, l'<b>aria-hidden</b> attribut n'est donc pas nécessaire.</p>
+    <p>Comme pour l'utilisation de tous les attributs ARIA, vous devez toujours tester avec des technologies d'assistance, et de préférence en demandant à des personnes handicapées de tester votre travail,</p>
+    <p>Vous devez également savoir que le paramètre <b>aria-hidden</b> sur <b>false</b> n'exposera pas l'élément aux technologies d'assistance si l'un de ses parents a cet attribut défini sur <b>true</b>.</p>
+    <p>Son utilisation <b>aria-hidden</b> est très limitée et doit principalement se limiter à améliorer l'expérience des utilisateurs de lecteurs d'écran en supprimant les informations purement décoratives ou dupliquées.</p>
+</div>
+
+
+<div>
+    <h2>Quel est l’ <b>aria-expanded</b> attribut et comment fonctionne-t-il ?</h2>
+    <p>cet attribut est utilisé à des fins d'accessibilité pour indiquer si un contrôle est déplié ou replié. Il est utilisé conjointement avec des widgets repliables tels que les menus, les accordéons et autres widgets de divulgation qui contrôlent la visibilité du contenu</p>
+    <p>cet attribut est définit sur true si le controle est déplié ou false replié</p>
+</div>
+
+<div>
+    <h2>Quel est l'<b>aria-live</b> attribut et comment fonctionne-t-il </h2>
+    <p>crée une région en direct sur votre page qui peut être utilisée pour informer les utilisateurs de lecteurs d'écran des modifications de contenu dynamiques dans la région en direct au fur et à mesure qu'elles se produisent</p>
+    <p>cette valeur, <b>assertive</b> cela signifie que la mise à jour est très importante. Elle a la priorité la plus élevée ; l'utilisateur doit donc être averti immédiatement.  cette assertivevaleur ne doit donc être utilisée que pour les notifications urgentes ou critiques.</p>
+    <p>La valeur suivante dans l’ordre de priorité est <b>polite</b>. Cette valeur signifie que la mise à jour n'est pas urgente ; le lecteur d'écran peut donc attendre la fin de l'annonce en cours ou la fin de la saisie de l'utilisateur avant d'annoncer la mise à jour. La plupart des régions actives utiliseront cette <b>polite</b> valeur.</p>
+    <p>La valeur de priorité la plus basse est <b>off</b> ce qui signifie que la mise à jour ne sera annoncée que si le contenu se trouve dans un élément actuellement activé par le clavier. En réalité, cette valeur n'est presque jamais utilisée, car son utilisation est très limitée et elle n'est pas implémentée de manière cohérente (voire inexistante) sur tous les lecteurs d'écran. Si vous avez besoin de régions dynamiques, prévoyez de l'utiliser <b>polite</b> pour tout, sauf pour les messages critiques qui nécessitent <b>assertive</b>.</p>
+</div>
+
+<div>
+    <h2>Quels sont les états ARIA courants utilisés sur les éléments de contrôle personnalisés ?</h2>
+    <p>es éléments de contrôle de forme sémantique tels que <b>input</b>, <b>select</b>, <b>textarea</b>, <b>button</b>, et <b>fieldset</b> ont des états intégrés qui sont transmis aux technologies d'assistance.</p>
+    <p><b>aria-selected</b> Cet état indique qu'un élément est sélectionné. Vous pouvez l'utiliser sur des contrôles personnalisés comme une interface à onglets, une liste déroulante ou une grille.L' <b>aria-selected</b> état indique l'onglet actuellement sélectionné. </p>
+    <p><b>aria-disabled</b>  Cet état sert à indiquer qu'un élément est désactivé uniquement pour les personnes utilisant des technologies d'assistance, comme les lecteurs d'écran</p>
+    <p><b>aria-haspopup</b> Cet état indique qu'un élément interactif déclenchera une fenêtre contextuelle lorsqu'il sera activé.</p>
+    <p>Vous ne pouvez utiliser cet <b>aria-haspopup</b> attribut que si la fenêtre contextuelle possède l'un des rôles suivants : <b>menu, listbox, tree, gridou dialog</b> </p>
+    <p><b>aria-required</b> permet d'indiquer qu'un champ doit être renseigné avant la soumission du formulaire</p>
+    <p>Nous devons utiliser l'<b>contenteditable</b> attribut pour permettre aux utilisateurs de saisir leurs données.</p>
+    <p><b>aria-checked</b> indique si un élément est coché</p>
+</div>
+
+<div>
+    <h2>Quel est l’ <b>aria-controls</b> attribut et comment fonctionne-t-il ?</h2>
+    <p>permet de créer une relation programmatique entre un élément contrôlant la présence d'un autre élément sur la page et l'élément qu'il contrôle. Cette relation peut aider les utilisateurs de lecteurs d'écran à mieux comprendre le fonctionnement du contrôle</p>
+    <p>Parmi les utilisations courantes, on peut citer un ensemble d'onglets contrôlant la visibilité de différentes sections de contenu, ou un bouton permettant d'activer ou de désactiver la visibilité d'un menu</p>
+</div>
+
+<div>
+    <h2>Quel est l’ <b>aria-describedby</b> attribut et comment fonctionne-t-il ?</h2>
+    <p> permet de fournir des informations complémentaires sur un élément aux utilisateurs de lecteurs d'écran en référençant le contenu existant sur la page. Il crée une association programmatique entre l'élément et le contenu (techniquement appelée description accessible), que les lecteurs d'écran peuvent utiliser pour informer les utilisateurs de ces informations complémentaires lorsqu'ils interagissent avec l'élément.</p>
+    <p>l'utilisation la plus courante est d'associer des instructions et des messages d'erreur aux champs de formulaire.  permet de garantir qu'ils les entendront. </p>
+    <p>autre cas d'utilisation est la suppression d'un élément button suivi d'un message décrivant ce qui se passe après un click</p>
+</div>
+
+
+<div>
+    <h2>Quand l’<b>alt</b> attribut est-il nécessaire</h2>
+    <p>est un texte alternatif souvent abrégée en <b>alt</b>, est une brève description d'une image. Il fournit des informations essentielle sur l'image aux utilisateurs qui ne peuvent pas la voir.</p>
+    <p>Un bon exemple de texte alternatif serait : « Un chiot noir et blanc avec un collier orange est allongé sur le ventre dans le sable, regardant de côté. Une balle orange vif repose près de ses pattes avant. »</p>
+    <p>Les meilleurs pratique pour rédiger un texte pour l'attribut <b>alt</b> :
+        <ul>
+            <li>Essayez de rédiger <b>alt</b> un texte court. Il doit être suffisamment détaillé pour permettre de comprendre l'image, mais pas trop long pour ne pas prêter à confusion.</li>
+            <li>N'essayez pas de décrire chaque détail. Concentrez-vous sur les aspects les plus importants de l'image.</li>
+            <li>En général, il n'est pas nécessaire de commencer par « image de » ou « photo de ». Vous pouvez simplement commencer la description directement.</li>
+            <li>De plus, s'il y a un texte similaire autour de l'image, vous n'avez pas besoin de l'écrire à nouveau.</li>
+            <li>Il est généralement recommandé de terminer le texte alternatif par un point pour plus de cohérence.</li>
+            <li>Si l'image est un lien vers une autre page, au lieu de décrire l'image elle-même, le alttexte doit décrire ce qui se passera si les utilisateurs cliquent dessus.</li>
+        </ul>
+    </p>
+    <p>Seule les images transmettant des informations importantes doivent contenir un <b>alt</b> les images servant uniquement de décoration n'en n'ont pas besoin pour éviter que les lecteurs d'ecran s'attarde sur des informations non essentielle </p>
+    <p>Toute vos images doivent contenir un <b>alt</b> car si on l'omet les lecteurs d'écran pourront lire le nom du fichier c'est pour ça qu'on met <b>alt</b> en  <b>null</b></p>
+    <p>Enfin, avant la mise en ligne de votre site Web, vous devez soigneusement tester si les lecteurs d’écran peuvent lire altcorrectement le texte.</p>
+</div>
+
+<div>
+    <h2>Quels sont les avantages d’un bon texte de lien en termes d’accessibilité </h2>
+    <p>il permet à chacun de trouver rapidement l'information. Des liens descriptifs aident les utilisateurs à savoir où ils vont et à quoi ils vont accéder. Cela évite que l'utilisateur se sente perdu et améliore l'expérience utilisateur globale</p>
+    <p>Pour ceux qui utilisent des lecteurs d'écran, un texte de lien clair et descriptif est indispensable. Les lecteurs d'écran lisent le texte du lien à voix haute ; un texte comme « Lire notre guide d'accessibilité » est donc bien plus judicieux que « Cliquez ici ».</p>
+    <p>voici quelque bonne pratique lors de la rédaction de texte de lien. 
+        <ul>
+            <li>Assurez-vous que les liens sont visuellement distincts en utilisant le soulignement et d’autres repères visuels, afin que les utilisateurs puissent facilement les identifier et les parcourir.</li>
+            <li>Évitez les textes de liens génériques tels que « ici », « cliquez ici » et « plus d'informations », car ils ne fournissent aucune information utile.</li>
+            <li>Visez des textes de liens concis et descriptifs, idéalement entre 2 et 5 mots, qui transmettent l'objectif du lien.</li>
+            <li>Évitez le jargon et les abréviations que les utilisateurs pourraient ne pas comprendre.</li>
+            <li>Concentrez-vous sur la destination, et non sur l'action. Par exemple, « Résultats du comportement utilisateur » plutôt que « Cliquez ici pour en savoir plus ».</li>
+            <li>Ne répétez pas le même texte de lien pour différentes destinations.</li>
+            <li>Placez les liens de manière à ce qu'ils soient cohérents avec le texte environnant. Par exemple, « Pour plus d'informations, visitez notre page d'événements » au lieu de « Cliquez ici pour en savoir plus ».</li>
+        </ul>
+    </p>
+</div>
+
+
+<div>
+    <h2>Quelles sont les bonnes façons de rendre le contenu audio et vidéo accessible ?</h2>
+    <p>Une vidéo ne se résume pas seulement à des éléments visuels, mais aussi à de l'audio. La première chose à laquelle vous devriez songer est donc d'ajouter des légendes ou des sous-titres à votre contenu vidéo.</p>
+    <p>Utilisez <b>track</b> element à l'intérieur de notre element <b>video</b> ou <b>audio</b> pour ajouter des légendes ou des sous-titre</p>
+    <p><b>kind</b> attribut permet d'indiquer à l'élément de piste comment il doit être utilisé. ces valeur sont : <b>caption</b>, <b>subtitles</b>, <b>chapters</b>, <b>metadata</b></p>
+    <p><b>srclang</b> attribut represente la langue du <b>track</b> contenu</p>
+    <p>Il est également important de fournir une transcription de vos contenus audio et vidéo. Une transcription est une version textuelle de tous les mots prononcés dans votre audio ou vidéo. Contrairement aux sous-titres, les transcriptions n'ont pas besoin d'être synchronisées avec le média.</p>
+    <p>D'autre moyen pour rendre votre contenu accessible est d'utiliser :
+        <ul>
+            <li>Ajout d'une superposition en langue des signes pour les vidéos destinées aux personnes sourdes et malentendantes.</li>
+            <li>Fournit des contrôles de volume et de vitesse.</li>
+            <li>Assurer un bon contraste pour le texte à l’écran.</li>
+            <li>Offrant plusieurs formats</li>
+        </ul>
+    </p>
+</div>
+
+<div>
+    <h2>Quelles sont les différentes manières de rendre les applications Web accessibles au clavier ?</h2>
+    <p>Cet <b>tabindex</b> attribut permet de rendre les éléments accessibles et de définir l'ordre de navigation au clavier. Il prend une valeur numérique, positive, nulle ou négative.</p>
+    <p>Il est important de ne jamais utiliser <b>tabindex</b> attribut avec une valeur supérieure à 0. Il est préférable d'utiliser une valeur égale 0 ou supérieure à -1</p>
+    <p><b>accesskey</b> est un autre attribut permettant de rendre le clavier de votre projet web accessible. Il permet de définir une touche qui cible ou active un élément particulier :</p>
+    <pre>
+        <code>
+            &lt;button accesskey="s"&gt;Save&lt;/button&gt;
+            &lt;button accesskey="c"&gt;Cancel&lt;/button&gt;
+            &lt;a href="index.html" accesskey="h"&gt;Home&lt;/a&gt;
+        </code>
+    </pre>
+    <p> Dans le code ci-dessus : 
+        <ul>
+            <li><b>accesskey="s"</b> Affecte la touche S au <b>Save</b> bouton. Sur la plupart des navigateurs, appuyer sur ALT + S(sous Windows) et CTRL + Option + S(sous Mac) active ce bouton.</li>
+            <li><b>accesskey="c"</b> définit la clé C du <b>Cancel</b> bouton, permettant aux utilisateurs de l'activer à l'aide de ALT + C(Windows) et CTRL + Option + C(Mac).</li>
+            <li><b>accesskey="h"</b> attribue la clé H au <b>Home</b> lien, permettant aux utilisateurs de naviguer vers la page d'accueil en utilisant ALT + H(Windows) et CTRL + Option + H(Mac).</li>
+        </ul>
+    </p>
+    <p>Une autre façon de rendre le clavier accessible dans vos applications est de fournir des indicateurs de focus clairs. Si l'indicateur de focus par défaut du navigateur vous semble insuffisant, vous pouvez le remplacer en ciblant l'état de focus de l'élément.</p>
+    <p>Example</p>
+    <pre>
+        <code>
+            element:focus {
+                outline: 2px solid #005fcc;
+                          } 
+        </code>
+    </pre>
+    <p>Cette <b>outline</b> propriétés permet de définir le contour de l'élément. cet example définit le contour comme une ligne bleu </p>
+    <p>L'indicateur de focus doit être stylé de manière à indiquer clairement l'élément actuellement actif. Pour être accessible, l'indicateur doit présenter un contraste de couleur d'au moins 3:1 avec la couleur d'arrière-plan qu'il recouvre.</p>
+    <p>Vous devez également éviter les pièges du clavier, qui se produisent lorsqu'un utilisateur ne peut pas déplacer le focus d'un certain élément dans des composants tels que les modaux et les fenêtres contextuelles.</p>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.transition{
+   width: 100px;
+   height: 100px;
+    background: red;
+    transition: width 2s, height 2s;
+}
+
+.transition:hover{
+width: 300px;
+    height: 300px;
+}
+
+.tt{
+    width: 100px;
+    height: 100px;
+    background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.tt:hover
+{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}

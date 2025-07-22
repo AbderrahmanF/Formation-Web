@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+</head>
+
+<body>
+    <h1>Attribute Selector</h1>
+    <p>Il est possible de styliser des éléments HTML qui ont des attributs ou des valeurs d'attributs spécifique.</p>
+
+    <div>
+        <h2>Selecteur CSS [attribut]</h2>
+        <p>Le <b>[attribute]</b> sélecteur est utilisé pour sélectionner des éléments avec un attribut spécifié</p>
+        <p>example : a[target] </p>
+        <p>ce sont tout les attributs a possedant l'attribut target </p>
+    </div>
+    <div>
+        <h2>Selecteur CSS [attribut="value"]</h2>
+        <p>Le <b>[attribute="value"]</b> sélecteur est utilisé pour sélectionner des éléments avec un attribut et une
+            valeur spécifiés</p>
+        <p>example: a[target="_blank"]</p>
+    </div>
+    <div>
+        <h2>Selecteur CSS [attribut~="valeur"]</h2>
+        <p>Le <b>[attribute~="value"]</b> est utilisé pour sélectionner des éléments avec une valeur d'attribut
+            contenant un mot spécifié.</p>
+        <p>Exemple slectionnant tous les élément avec un attribut title qui contient une liste de mot séparés dont l'un
+            contient fleur</p>
+        <p>[title~="fleur"]</p>
+    </div>
+    <div>
+        <h2>Selecteur CSS [attribut|="valeur"]</h2>
+        <p>Le <b>[attribut|="valeur"]</b> est utilisé pour sélectionner les éléments avec l'attribut spécifié dont la valeur peut être exactement ka valeur spécifié, ou la valeur spécifié suivi d'un tiret (-)</p>
+        <p>Example : <b>[class|="top"] </b></p>
+    </div>
+    <div>
+        <h2>Sélecteur CSS [attribut^="valeur"]</h2>
+        <p>Le <b>[attribut^="valeur"]</b>  est utilisé pour sélectionner les éléments avec l'attribut spécifié, dont la valeur commence par la valeur spécifiée.</p>
+        <p>Example : <b>[class^="top"] </b></p>
+    </div>
+    <div>
+        <h2>Sélecteur CSS [attribute$="value"]</h2>
+        <p>Le <b>[attribute$="value"]</b>  est utilisé pour sélectionner les éléments dont la valeur d'attribut se termine par une valeur spécifiée.</p>
+        <p>Example : <b>[class$="test"]</b></p>
+    </div>
+    <div>
+        <h2>Sélecteur CSS [attribut*="valeur"]</h2>
+        <p>Le <b>[attribute*="value"]</b> est utilisé pour sélectionner les éléments dont la valeur d'attribut contient une valeur spécifiée.</p>
+        <p>Example: <b>[class*="te"]</b></p>
+    </div>
+
+</body>
+
+</html>

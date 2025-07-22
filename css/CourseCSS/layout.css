@@ -1,0 +1,25 @@
+img{
+    width: 50%;
+    margin: 0px 300px ;
+}
+
+table{
+    width: 70%;
+    border: 1px solid;
+    text-align: center;
+    border-collapse:separate;
+    margin: auto;
+    overflow-x: auto;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover{
+    background-color: antiquewhite;
+}
+
+td{
+    padding: 15px;
+}

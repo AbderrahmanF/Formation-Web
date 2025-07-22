@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+</head>
+<body>
+    <h1>HTML Text Formatting</h1>
+    <p>HTML contains several elements for defining text with a special meaning</p>
+
+    <div>
+    <h2>HTML Formatting Element</h2>
+    <p>Formatting elements were designed to display special types of text</p>
+    <ul>
+        <li>&lt;b&gt; - Bold text </li>
+        <li>&lt;strong&gt; - Important text</li>
+        <li>&lt;i&gt; - Italic text</li>
+        <li>&lt;em&gt; - Emphasized text</li>
+        <li>&lt;matk&gt; - Marked text</li>
+        <li>&lt;small&gt; - Smaller text</li>
+        <li>&lt;del&gt; or &lt;s&gt; - Deleted text</li>
+        <li>&lt;ins&gt; - Inserted text</li>
+        <li>&lt;sub&gt; - Subscript text</li>
+        <li>&lt;sup&gt; - Superscript text</li>
+        <li>&lt;u&gt; - surligner du text</li>
+    </ul>
+    </div>
+
+    <div>
+        <h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
+        <p>The HTML &lt;b&gt; element defines bold text, without any extra importance.</p>
+        <p>The HTML &lt;strong&gt; element defines text with strong importance. The content inside is typically displayed in bold</p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;i&gt; and &lt;em&gt; Elements</h2>
+        <p>The HTML &lt;i&gt; element defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic</p>
+        <p>The HTML &lt;em&gt; element defines Emphasized text. The content inside is typically displayed in italic</p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;small&gt; Element</h2>
+        <p>The HTML &lt;small&gt; element defines smaller text</p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;mark&gt; Element</h2>
+        <p>The HTML &lt;mark&gt; element defines text that should be marked or highlighted</p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;del&gt; Element</h2>
+        <p>The HTML &lt;del&gt; element defines text that has been deleted from a document. Browsers will usually strike a line through deleted text</p>
+    </div>
+
+    <div>
+        <h2> HTML &lt;ins&gt; Element</h2>
+        <p>The HTML &lt;ins&gt; element defines a text that has been inserted into a document. Browsers will usually underline inserted text</p>
+    </div>
+
+<div>
+    <h2>HTML &lt;sub&gt; Element</h2>
+    <p>The HTML &lt;sub&gt; element defines subscript text. Subscript text appears half a character below the normal line, he can be used for the chemical formule, like H<sub>2</sub>O  </p>
+</div>
+    
+<div> 
+    <h2>HTML &lt;sup&gt; Element</h2>
+    <p>The HTML &lt;sup&gt; element defines Superscript text appears half a character above the normal line 2<sup>2</sup>=4 </p>
+</div>
+
+<div>
+    <h3>Quand faut t'il utiliser l'élément d'emphase(em) plutot que l'élément de texte idiomatique(i)</h3>
+    <p>L'élément de texte idiomatique (i), était initialement utilisé a des fins de présentation pour afficher le texte en italique. </p>
+    <p>Pour souligner l'importance du texte, vous utiliser un élément sémantique similaire élément emphase(em), il est recommandé pour fournir davantage de contexte. </p>
+</div>
+
+<div>
+    <h3>Quand devez-vous utiliser l'<b>strong</b> element plutot que bring attention "&lt;b&gt;" ?</h3>
+    <p> &lt;b&gt; est couramment utilisé pour mettre en avant des mots-clés dans les résumés ou des noms de produits dans les avis</p>
+    <p>pour souligner l'importance du texte utiliser &lt;strong&gt;, il s'agit d'un élément semantic qui met en valeur le texte crucial  ou urgent </p>
+</div>
+
+<div>
+    <h3>Comment afficher les heures et les dates en HTML?</h3>
+    <p>l'<b>time</b> est utilisé pour représenter un moment précis dans le temps.</p>
+    <p>Example</p>
+    <pre>  &lt;p&gt; The reservations are for &lt;time datetime="20:00">20:00 &lt;/time&gt; &lt;/p&gt; </pre>
+    <p>le <b>datetime</b> attribut est utilisé pour traduire les date et les heures dans un format lisible par machine.</p>
+</div>
+
+
+<div>
+    <h2>Comment représenter le code informatique en HTML?</h2>
+    <p>L'élément de code en ligne permettant de représenter de courte ligne de code dans du texte. Utiliser pour des article technique et les pages de documentation.</p>
+    <p>l'élément <b>code</b> qui est une balise sémantique sert a marquer du texte comme du code informatique</p>
+    <p>L'<b>code</b> est destiné à représenté une seule ligne de code. Si on veut représenter plusieurs ligne de code utiliser la balise <b>&lt;pre&gt;</b> puis à l'intérieur la balise <b>&lt;code&gt;</b>.</p>
+</div>
+
+<div>
+    <h2>A quoi servent les éléments <b>u</b>, <b>s</b>, <b>ruby</b> et comment fonctionne t'il ?</h2>
+ 
+    <p>l'élément d'annotation non articulé, ou <b>u</b> élément en abrégé  est utilisé pour représenter un texte en ligne auquel une annotation non textuelle est appliqué </p>
+    <p>il <b>u</b> ne doit être utilisé que pour indiquer qu'un texte est étiqueté.</p>
+ 
+    <p>Elément barré, ou <b>s</b> élément en abrégé, doit être utilisé pour signaler que le texte n'est plus exact ou pertinent.</p>
+    <p>Cet <b>s</b> élément ne doit jamais être utilisé uniquement pour afficher les modifications apportées à un document. Dans ce cas, les éléments de texte supprimé (del) et inséré (ins) seraient plus appropriés.</p>
+
+
+    <p>Cet <b>ruby</b> élément représente un petit texte affiché au-dessus ou en dessous du texte principale.</p>
+    <p>Il est généralement utilisé pour indiquer la prononciation des caractères d'Asie de l'Est</p>
+    <p> Example : </p>
+ 
+    <p>&lt;ruby&gt; 明日 &lt;rp&gt; (&lt;/rp&gt;&lt;rt&gt;Ashita &lt;rt&gt;&lt;rp&gt;)&lt;/rp&gt; &lt;/ruby&gt;</p>
+    <p>Resultat :</p>
+    <ruby> 明日 <rp>(</rp><rt>Ashita</rt><rp>)</rp> </ruby>
+
+    <p>L'<b>rp</b> élément, ou élément de parenthèse de secours Ruby, est utilisé comme solution de secours pour les navigateurs ne prennant pas en charge l'affichage des annotations Ruby</p>
+    <p>L'<b>rt</b> élément, ou élément de texte Ruby, sert à indiquer le texte de l'annotation Ruby. Ce texte est généralement utilisé pour la prononciation ou les détails de traduction dans la typographie d'Asie de l'Est.</p>
+    <p>Bien que l'<b>ruby</b> élément puisse être utilisé pour d'autres types d'annotations, le cas d'utilisation le plus courant est pour la typographie d'Asie de l'Est.</p>
+</div>
+
+
+
+</body>
+</html>

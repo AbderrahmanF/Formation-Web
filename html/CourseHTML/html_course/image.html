@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+</head>
+
+<body>
+    <h1>HTML Images</h1>
+    <p>Images can be improve the design and the appearance of a web page</p>
+    <div>
+        <h2>Image Floating</h2>
+        <p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
+    </div>
+
+    <div>
+        <h2>Chapter summary</h2>
+        <ul>
+            <li>Use the HTML <b>&lt;img&gt;</b> element to define an image</li>
+            <li>Use the HTML <b>src</b> attribute to define the URL of the image</li>
+            <li>Use the HTML <b>alt</b> attribute to define an alternate text for an image, if it cannot be displayed
+            </li>
+            <li>Use the HTML <b>width</b> and <b>height</b> attributes or define them in the CSS file.</li>
+            <li>Use the CSS <b>float</b> property to let the image float to the left or to the right</li>
+        </ul>
+    </div>
+    <img src="../../img/ESME.jpg" alt="Logo_esme" title="Logo_esme">
+
+    <div>
+        <h2>HTML Image Maps</h2>
+        <p>With HTML image maps, you can create clickable areas on an image.</p>
+
+        <div>
+            <h3>Image Maps</h3>
+            <p>The HTML &lt;map&gt; tag defines an image map. An image map is an image with clickable areas. the areas
+                are defined with one or more &lt;area&gt; tags</p>
+            <p> Example source code for the image map above: <br> <b>&lt;img src="d.jpg" alt="work"
+                    usemap="#workmap"</b> </p>
+
+            <b>
+                <p>&lt;map name="workmap"&gt;</p>
+                <p>&lt;area shape="rect" coords="34,44,270,350" alt="computer" href="lien.html"&gt;</p>
+                <p>&lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="lien.html"&gt;</p>
+                <p> &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt;</p>
+            </b>
+
+            <h3>How Does it Work?</h3>
+            <p>The idea behind an image map is that you should be able to perform different actions depending on where
+                in the image you click.</p>
+            <p>To create an image map you need an image, and some HTML code that describes the clickable areas.</p>
+        </div>
+
+        <div>
+            <h3>The Image</h3>
+            <p>The image is inserted using the &lt;img&gt; tag. The only difference from other images is that you must
+                add a <b>usermap</b> attribute</p>
+            <p>The <b>usemap</b> value starts with a hash tag # followed by the name of the image map, and is used to
+                create a relationship between the image and the image map.</p>
+        </div>
+
+        <div>
+            <h3>Create Image Map</h3>
+            <p>Then, add a &lt;map&gt; element.</p>
+            <p>The &lt;map&gt; element is used to create an image map, and is linked to the image by using the required
+                <b>name</b> attribute
+            </p>
+            <p>The <b>name</b> attribute must have the save value as the <b>&lt;img&gt;</b>'s <b>usemap</b> attribute
+            </p>
+        </div>
+
+        <div>
+            <h3>The Areas</h3>
+            <p>Then, add the clickable area</p>
+            <p>A clickable area is defined using an &lt;area&gt; element</p>
+            <p>The Attribute of <b>area</b>:
+            <ul>
+                <p>
+                    <strong>Shape</strong>: You must define the shape pf the clickable area, and you can choose one of
+                    these values
+                    <li><b>rect</b> - defines a rectangular region</li>
+                    <li><b>circle</b> - defines a circular region</li>
+                    <li><b>poly</b> - defines a polygonal region</li>
+                    <li><b>default</b> define the entire region</li>
+            </ul>
+            <div>
+                <p>Shape="rect</p>
+                <p>the coordinates 34,44 is located 34 pixels from the left margin and 44 pixels from the top </p>
+                <p>The coordinates 270,350 is located 270 pixels from the left margin and 350 pixels from the top:</p>
+                <p> the result is coords="34, 44, 270, 340"</p>
+            </div>
+
+            <div>
+                <p>Shape="circle"</p>
+                <p>To add a circle area, first locate the coordinates of the center of the circle:</p>
+                <p>Then specify the radius of the circle:</p>
+                <p>The result is coords="337, 300, 44"</p>
+            </div>
+
+            <div>
+                <p>Shape="Poly"</p>
+                <p>The <b>shape="poly"</b> Contains several coordinate points, which creates a shape formed with
+                    straight lines (a polygon)</p>
+                <p>This can be used to create any shape</p>
+                <p>we need to find all the edges of the object</p>
+                <p>The coordinates come in pairs, one for the x-axis and one for the y-axis:</p>
+                <p>Example :
+                    coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+                </p>
+            </div>
+            </p>
+        </div>
+        <div>
+            <p>Image Map and JavaScript</p>
+            <p>A clickable area can also trigger a JavaScript function.</p>
+            <p>Add a <b>click</b> event to the &lt;area&gt; element to execute a JavaScript function</p>
+
+            <p> &lt;map name="workmap"&gt; </p>
+            <p>&lt;area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()"&gt;</p>
+            <p>&lt;/map&gt; </p>
+
+            <p>&lt;script&gt;
+            <p>function myFunction() { </p>
+            <p> alert("You clicked the coffee cup!"); </p>
+            <p>}</p>
+            <p>&lt;/script&gt;</p>
+
+        </div>
+
+        <div>
+            <h3>Chapter Summary</h3>
+            <p>
+            <ul>
+                <li>Use the HTML &lt;map&gt; element to define an image map</li>
+                <li>Use the HTML &lt;area&gt; element to define the clickable areas in the image map</li>
+                <li>Use the HTML <b>usemap</b> attribute of the &lt;img&gt; element to point to an image map</li>
+            </ul>
+            </p>
+        </div>
+        </p>
+    </div>
+
+    <div>
+        <h2>HTML Background Image</h2>
+        <p>A background image can be specified for almost any HTML element.</p>
+        <div>
+            <h3>Background Image on an HTML element</h3>
+            <p>To add a background image on an HTML element, use the HTML <b>style</b> attribute and the CSS
+                <strong>background-image</strong> property:</p>
+            <p>Background image on a page or an HTML element.</p>
+            <div>
+                <h3>Background Repeat</h3>
+                <p>If the background image is smaller than the element, the image will repeat itself, horizontally and
+                    vertically, until it reaches the end of the element:</p>
+                <p>To avoid the background image from repeating itself, set the background-repeat property to no-repeat.
+                </p>
+            </div>
+            <div>
+                <h3>Background Cover</h3>
+                <p>If you want the background image to cover the entire element, you can set the <b>background-size</b>
+                    property to cover.</p>
+                <p>Also, to make sure the entire element is always covered, set the <b>background-attachment</b>
+                    property to fixed:</p>
+                <p>This way, the background image will cover the entire element, with no stretching (the image will keep
+                    its original proportions):</p>
+            </div>
+            <div>
+                <h3>Background Stretch</h3>
+                <P>If you want the background image to stretch to fit the entire element, you can set the
+                    <b>background-size</b> property to 100% 100%:</P>
+                <p>Try resizing the browser window, and you will see that the image will stretch, but always cover the
+                    entire element.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <h2>HTML &lt;Picture&gt; Element</h2>
+        <p>The HTML <b>&lt;picture&gt;</b> element allows you to display different picture for different devices or screen-size</p>
+        <p>Allows you to define multiple sources for an image depending on conditions (e.g. screen size, file format, etc.).</p>
+
+        <p>Example <br> Show different images for different screen sizes:</p>
+        <pre>
+            &lt;picture&gt;
+                &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt;
+                &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt;
+                &lt;img src="img_girl.jpg"&gt;
+              &lt;/picture&gt;
+        </pre>
+
+        <div>
+            <h3>When to use the picture Element</h3>
+            <p>There are two main purposes for the &lt;picture&gt; element</p>
+            <ol> 
+                <li>Bandwidth</li>
+                <p>If you have a small screen or device, it's not necessary to load a large image file. The browser will use the first <b>&lt;source&gt;</b> element with matching attribute values, and ignore any of the following elements.</p>
+                <li>Format Support</li>
+                <p>Some browsers or devices may not support all image formats. By using the <b>&lt;picture&gt;</b> element, you can add images of all formats, and the browser will use the first format it recognizes, and ignore any of the following elements.</p>
+            </ol>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

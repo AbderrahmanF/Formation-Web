@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction CSS</title>
+    <link rel="stylesheet" href="../../css/CourseCSS/Introduction.css">
+    <link rel="icon" href="../../img/css-3.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1 class="titre-page"> <abbr title="Cascading style Sheets">CSS </abbr> Introduction</h1>
+    <p class="desc">CSS is the language we use to style a web page</p>
+    <p>
+    <ul>
+        <li> CSS stands for <b>Cascading Style Sheets</b></li>
+        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+        <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+        <li>External stylesheets are stored in CSS files.</li>
+        <li>une caractéristique importante du CSS est sa nature en cascade. Cela signifie que les styles peuvent être hérités et remplacés, permettant une structure hiérarchique de style</li>
+    </ul>
+    </p>
+
+    <div>
+        <h2>CSS Syntax</h2>
+        <p>A CSS rule consists of a selector and a declaration block.</p>
+        <p>Example: </p>
+        <p>h1 {color: blue; font-size:12px;}
+        <ul>
+            <li>h1: Selector points to the html element you want to style.</li>
+            <li><i>color: blue;</i> The declaration block contains one or more declaration separate by semicolons ";"
+            </li>
+            <li>Each declaration includes a CSS proprety name:"color" and value:"blue", separate by a colon ":"</li>
+            <li>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly
+                braces.</li>
+        </ul>
+        </p>
+    </div>
+
+    <div>
+        <h2>CSS Selector</h2>
+        <p>We can divide CSS selector into five categories:
+        <ul>
+            <li><u>Simple selector</u> (select elements based on name, id, class)</li>
+            <li><u>Combinator selectors</u> (select elements based on a specific relationship between them)</li>
+            <li><u>Pseudo-class selector</u> (select elements based on a certain state)</li>
+            <li><u>Pseudo-elements selectors</u> (select and style a part of an element)</li>
+            <li><u>Attribute Selector</u> (select elements based on an attribute or attribute value)</li>
+        </ul>
+        </p>
+
+        <div>
+            <h3>The CSS element selector</h3>
+            <p>The element selector selects HTML elements based on the element name like (p, h1, div, etc...)</p>
+        </div>
+
+        <div>
+            <h3>The CSS Id selector</h3>
+            <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+            <p><mark>The Id of an element is unique within a page, so the id selector is used to select one unique
+                    element!</mark> </p>
+            <p>To select an element with a specific Id, write a <b>hash (#)</b> character, followed by the id of the
+                element.</p>
+            <p>example : <b>#nameId{} </b></p>
+        </div>
+
+        <div>
+            <h3>The CSS Class selector</h3>
+            <p>The class selector selects elements with a specific class attribute</p>
+            <p>To select elements with a specific class, write a <b>period (.)</b> </p>
+
+            <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+            <p>Example : <b>p.center</b> in this example only &lt;p&gt; elements with class="center" will be affected
+            </p>
+
+            <p>In this example the &lt;p&gt; element will be styled according to 2 class, "center" and "large" </p>
+            <p>&lt;p class="center larger"&gt; this is parag &lt;/p&gt;</p>
+        </div>
+
+        <div>
+            <h3>The CSS Universal Selector</h3>
+            <p>The universal selector <b>(*)</b> selects all HTML elements on the page.</p>
+        </div>
+
+        <div>
+            <table>
+                <caption>All CSS Simple Selector</caption>
+                <tr>
+                    <th>Selector</th>
+                    <th>Example</th>
+                    <th>Example Description</th>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>#firstname</td>
+                    <td>Selects the element with id="firstname"</td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>.intro</td>
+                    <td>Selects all elements with class="intro"</td>
+                </tr>
+                <tr>
+                    <td>*</td>
+                    <td>*</td>
+                    <td>Selects all elements</td>
+                </tr>
+                <tr>
+                    <td>element</td>
+                    <td>p</td>
+                    <td>Selects all &lt;p&gt; elements</td>
+                </tr>
+                <tr>
+                    <td>element, element...</td>
+                    <td>div, p</td>
+                    <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+        <h2>CSS Height, Width and Max-width</h2>
+        <p>The CSS <b>height</b> and <b>width</b> properties are used to set the height and width of an element.</p>
+        <p>The CSS <b>max-width</b> property is used to set the maximum width of an element</p>
+            <table>
+                <caption>ALL CSS Dimension Properties</caption>
+                <tr>
+                    <th>Property</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Sets the height of an element</td>
+                </tr>
+                <tr>
+                    <td>max-height</td>
+                    <td>Sets the maximum height of an element</td>
+                </tr>
+                <tr>
+                    <td>max-width</td>
+                    <td>Sets the maximum width of an element</td>
+                </tr>
+                <tr>
+                    <td>min-height</td>
+                    <td>Sets the minimum height of an element</td>
+                </tr>
+                <tr>
+                    <td>min-width</td>
+                    <td>Sets the minimum width of an element</td>
+                </tr>
+                <tr>
+                    <td>width</td>
+                    <td>Sets the width of an element</td>
+                </tr>
+            </table>
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

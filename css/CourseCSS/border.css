@@ -1,0 +1,21 @@
+b{
+    color: red;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+table {
+    margin: auto;
+}
+
+td{
+    background-color: aliceblue;
+}
+th{
+    background-color: antiquewhite;
+}
+
+img{
+    width: 50%;
+    height: 50%;
+     margin-left: 300px;
+}

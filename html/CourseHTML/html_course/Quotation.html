@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=a">
+    <title>Quotation</title>
+</head>
+
+<body>
+    <h1>HTML Quotation and Citation Elements</h1>
+    <p>Vous devez faire preuve de discernement pour trouver le bon équilibre entre l’information et la présentation afin
+        d’éviter d’encombrer le texte tout en étant clair et concis.</p>
+
+    <div>
+        <h2>HTML &lt;blockquote&gt; for quotation</h2>
+        <p>The HTML &lt;blockquote&gt; element defines a section that is quoted from another source. Browsers usually
+            indent &lt;blockquote&lg; elements</p>
+        <p>The "cite" attribute in the &lt;blockquote&gt; tag specifies the source of the citation.</p>
+    </div>
+
+    <div>
+        <h2> HTML &lt;q&gt; for Short Quotations</h2>
+        <p>The HTML &lt;q&gt; tag defines a short quotation</p>
+        <p>Browsers normally insert quotation marks around the quotation</p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;abbr&gt; for abbreviations</h2>
+        <p>The HTML &lt;abbr&gt; tag defines an abbreviation or an acronym, like "HTML", "CSS"</p>
+        <p><b>TIPS</b> Use the global <b>title</b> attribute to show the description for the abbreviation/acronym when
+            you mouse over the element</p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;address&lg; for contact information</h2>
+        <p>The HTML &lt;address&gt; tag defines the contact information for the author/owner of a document or an
+            article.</p>
+        <p>The contact information can be an email address, URL, Physical address, Phone number</p>
+        <p>the text in the <b>address</b> element usually renders in italic, and Browsers will always add a line break
+            before and after the <b>address</b> </p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;cite&gt; for Work Title</h2>
+        <p>The HTML &lt;cite&gt; tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, etc..)
+        </p>
+        <p> <strong>Note</strong>: A person's name is not the title of a work.</p>
+    </div>
+
+    <div>
+        <h2>HTML &lt;bdo&gt; for Bi-Directional Override</h2>
+        <p>BDO stands for bi-directional Override</p>
+        <p>The HTML &lt;bdo&gt; tag is used to Override the current text direction</p>
+        <p>This tag is used with the dir attribute, which can take two values: "rtl" (right to left) or "ltr" (left to
+            right). </p>
+    </div>
+
+    <div>
+        <h2>Cours a modifier</h2>
+
+        <p>le HTML "Citation en bloc" doit être utilisé pour représenter une section citée d'une autre source. Si la
+            source de la citation possède une addresse, vous pouvez la citer avec <b>cite</b> attribut la valeur de cet
+            attribut doit être une URL valide.</p>
+
+        <p>Bien que cet attribut ne modifie pas la présentation de la citation, il est très utile pour fournir aux
+            lecteurs d'écran et aux moteurs de recherche plus d'informations sur la citation </p>
+
+        <blockquote cite="https://www.w3schools.com/html/html_quotation.asp">
+            <p>HTML est le langage de balisage standard pour les pages Web.</p>
+        </blockquote>
+
+        <p>Si vous souhaitez attribuer visuellement la source, vous pouvez ajouter un élément de citation, cite, à
+            l'extérieur de l'élément de citation en bloc. Cet élément est différent de l' cite attribut. L'élément de
+            citation est un élément HTML permettant de baliser le titre d'une œuvre référencée, comme un article de
+            livre, une chanson, un film, un site web ou un article de recherche</p>
+
+
+        <p><abbr title="Hyper Text Markup Language">HTML</abbr> is the foundation of the web.</p>
+
+
+        <div>
+            <h2>Spécification de la balise &lt;address&gt;</h2>
+            <p>L'élément address de contact sert a représenter les coordonnées d'une section d'une page ou les
+                informations de contact de l'auteur du document.</p>
+            <p>Est réserver au information de contact d'une personne</p>
+            <p>Lorsqu'il s'agit de crée les sections de contact de votre site Web, vous devez utiliser l'<b>address</b>
+                éléments sémantique plutôt qu'un élément générique comme un div.</p>
+            <p>Example : </p>
+<pre>
+    &lt;address&gt;
+            &lt;h2&gt;Company Name&lt;/h2&gt;
+        &lt;p&gt;
+            1234 Elm Street
+            Springfield, IL 62701
+            United States
+        &lt;/p&gt;
+         &lt;p&gt;Phone: &lt;a href="tel:+15555555555"&gt;+1 (555) 555-5555&lt;/a&gt;&lt;/p&gt;
+         &lt;p&gt;Email: &lt;a href="mailto:contact@company.com">contact@company.com&lt;/a&gt;&lt;/p&gt;
+    &lt;/address&gt;
+</pre>
+
+<p>un inconvénient de mailto est que les utilisateurs le perçoive comme du spam.</p>
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

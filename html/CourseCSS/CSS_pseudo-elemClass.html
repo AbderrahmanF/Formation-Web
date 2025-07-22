@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes & Element</title>
+</head>
+
+<body>
+    <h1>CSS Pseudo Classes & Elements</h1>
+
+    <div>
+        <h2>Pseudo-classes</h2>
+        <p>Est utilisée pour définir un état spécial d'un élément.
+        <ul>
+            <li>Styliser un élément lorsqu'un utilisateur déplace la souris dessus</li>
+            <li>Styliser différemment les liens visités et non visités</li>
+            <li>Appliquer un style à un élement lorsqu'il est mis en avant</li>
+            <li>Style des élements de formulaire valides/Invalides/Obligatoires/Facultatifs</li>
+        </ul>
+        </p>
+        <p>Syntax Pseudo-classes : <strong>Selector:pseudo-class</strong> </p>
+        <p>comme on l'a vu précedemment avec les lien (:link, :visited, :hover, :active) sont des Pseudo-classes.</p>
+        <p>On peur aussi les utiliser sur d'autre balise que la balise d'ancrage (a)</p>
+        <div>
+            <h3>Survol d'info-bulle simple</h3>
+            <p>Passez la souris sur un élément &lt;div&gt; pour afficher un élément &lt;p&gt; (comme une info-bulle) :
+            </p>
+        </div>
+        <div>
+            <h3>Pseudo-classe : first-child</h3>
+            <p>La <b>:first-child</b> pseudo-classe correspond à un élément spécifié qui est le premier enfant d'un
+                autre élement</p>
+            <p>Dans l'exemple suivant, le sélecteur correspond à tout élément &lt;p&gt; qui est le premier enfant de
+                n'importe quel élément :</p>
+            <p><strong>p:first-child</strong></p>
+            <h4>Faire correspondre le premier élément &lt;i&gt; dans tous les éléments </h4>
+            <p>le sélecteur correspond au premier élément &lt;i&gt; dans tous les éléments &lt;p&gt; : <strong>p
+                    i:first-child</strong></p>
+            <h4>Faire correspondre tous les éléments &lt;i&gt; dans tous les premiers éléments enfants</h4>
+            <p>e sélecteur correspond à tous les éléments &lt;i&gt; dans les éléments &lt;p&gt; qui sont le premier
+                enfant d'un autre élément : <strong>p:first-child i</strong></p>
+        </div>
+        <div>
+            <h3>Pseudo-classe: lang</h3>
+            <p>La <b>:lang</b> pseudo-class permet de définir des règles spéciales pour différente langues.</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Pseudo-Elements</h2>
+        <p>Un Pseudo-élément CSS est utilisé pour styliser des partie spécifique d'un élément.
+        <ul>
+            <li> styliser la première lettre ou ligne d'un élément</li>
+            <li>Insérer du contenu avant ou après un élément</li>
+            <li>Styliser les marqueurs des éléments de la liste</li>
+            <li>Styliser la zone d'affichage derrière une boîte de dialogue</li>
+        </ul>
+        </p>
+        <p>Syntax : <strong>selector::pseudo-element {}</strong></p>
+        
+        <div>
+            <h3>pseudo-element ::first-line</h3>
+            <p>Le <b>::first-line</b> est utilisé pour ajouter du style spécial a la première ligne d'un texte.</p>
+            <p><strong>Remarque</strong> le ::first-line pseudo-élément ne peut être appliqué qu'aux éléments de niveau bloc.</p>
+        </div>
+        <div>
+            <h3>pseudo-element  ::first-letter</h3>
+            <p>The <b>::first-letter</b> est utilisé pour ajouter un style spécial à la première lettre d'un texte</p>
+                <p><strong> Remarque</strong> : le ::first-letter pseudo-élément ne peut être appliqué qu'aux éléments de niveau bloc</p>
+        </div>
+        <div>
+            <h3>pseudo-element ::before</h3>
+            <p>Le <b>::before</b> est utilisé pour insérer du contenue avant le contenu d'un élément.</p>
+        </div>
+        <div>
+            <h3>pseudo-element ::after</h3>
+            <p>le <b>::after</b> est utilisé pour inserer du contenu après le contenu d'un élément.</p>
+        </div>
+        <div>
+            <h3>pseudo-element ::marker</h3>
+            <p>Le <b>::marker</b> sélectionne les marqueurs des éléments de la liste.</p>
+        </div>
+        <div>
+            <h3>pseudo-element :: selection</h3>
+            <p>Le <b>::selection</b> correspond à la partie d'un élément selectionnée par un utilisateur les proprièté qui peuvent lui être appliquer
+            <ul>
+                <li><b>color</b></li>
+                <li><b>background</b></li>
+                <li><b>cursor</b></li>
+                <li><b>outline</b></li>
+            </ul> </p>
+
+        </div>
+
+        
+    </div>
+
+</body>
+
+</html>

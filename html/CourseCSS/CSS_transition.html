@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <link rel="stylesheet" href="../../css/CourseCSS/transition.css">
+</head>
+<body>
+    <h1>CSS Transition</h1>
+    <p>Les transitions CSS vous permettent de modifier les valeurs des propriétés en douceur, sur une durée donnée.</p>
+        
+    <ul>
+        <li><b>transition</b></li>
+        <li><b>transition-delay</b></li>
+        <li><b>transition-duration</b></li>
+        <li><b>transition-property</b></li>
+        <li><b>transition-timing-functions</b></li>
+    </ul>
+
+    <div>
+        <h2>Utilisation des transition</h2>
+        <p>Pour créer un effet de transition, vous devez spécifier deux choses : 
+            <ul>
+                <li>la propriété CSS à laquelle vous souhaitez ajouter un effet</li>
+                <li>la durée de l'effet</li>
+            </ul>
+        </p>
+        <p><strong>Remarque</strong>: si la partie durée n’est pas spécifiée, la transition n’aura aucun effet, car la valeur par défaut est 0.</p>
+        <p>Example d'utilisation: </p>
+        <p><b>transition: width 2s, height 2s</b> puis tu utilise la class :hover et tu spécifie de l'augmenter avec width et height</p>
+    </div>
+
+    <div class="transition"></div>
+
+    <div>
+        <h3>Spécifier la courbe de vitesse de la transition</h3>
+        <p>La <b>transition-timing-function</b> spécifie la courbe de vitesse de l'effet de transition elle peut avoir plusieur valeur: 
+            <ul>
+                <li><b>ease</b> - spécifie un effet de transition avec un démarrage lent, puis rapide, puis une fin lente (c'est la valeur par défaut)</li>
+                <li><b>linear</b> - spécifie un effet de transition avec la même vitesse du début à la fin</li>
+                <li><b>ease-in</b> - spécifie un effet de transition avec un démarrage lent</li>
+                <li><b>ease-out</b> - spécifie un effet de transition avec une fin lente</li>
+                <li><b>ease-in-out</b> - spécifie un effet de transition avec un début et une fin lents</li>
+                <li><b>cubic-bezier(n,n,n,n)</b> - vous permet de définir vos propres valeurs dans une fonction cubique-Bézier</li>
+            </ul>
+        </p>
+    </div>
+
+    <div>
+        <h3>Retarder l'effet de transition</h3>
+        <p>la <b>transition-delay</b> spécifie un délai (en secondes) pour l'effet de transition.</p>
+    </div>
+
+    <div>
+        <h3>Transition + Transformation</h3>
+        <div class="tt"></div>
+    </div>
+
+</body>
+</html>

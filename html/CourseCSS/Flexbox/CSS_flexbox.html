@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+</head>
+
+<body>
+    <h1>CSS Flexbox</h1>
+    <p>Flexbox est l'abréviation du module <strong>Flexible Box Layout</strong></p>
+    <p>Flexbox est une méthode de mise en page permettant d'organiser des éléments en lignes ou en colonnes</p>
+    <p>Flexbox facilite la conception d'une structure de mise en page réactive et flexible, sans utiliser de flottement
+        (float) ni de positionnement (position).</p>
+
+    <div>
+        <h3>Module de positionnement</h2>
+            <p>avant l'arrivé du module flexible box layout il exister quatre modes de mise en page :
+            <ul>
+                <li><b>block</b> - pour les sections d'une page Web</li>
+                <li><b>Inline</b> - pour le texte</li>
+                <li><b>Table</b> - pour les données de tableau à deux dimensions</li>
+                <li><b>Positioned</b> - pour la position explicite d'un élément</li>
+            </ul>
+            </p>
+    </div>
+
+    <div>
+        <h3>Composant flexbox</h2>
+            <p>Une flexbox est toujours composée de
+            <ul>
+                <li>un conteneur Flex - l'élément parent (conteneur) &lt;div&gt; </li>
+                <li>Éléments flexibles - les éléments à l'intérieur du conteneur &lt;div&gt; </li>
+            </ul>
+            </p>
+    </div>
+
+    <div>
+        <h3>Un conteneur flexible avec trois éléments flexibles</h2>
+            <p>Pour commencer à utiliser CSS Flexbox, vous devez d'abord définir un conteneur flexible.</p>
+            <p>Le conteneur flexible devient flexible en définissant la <b>display</b> propriété sur <b>flex</b></p>
+    </div>
+
+    <div>
+        <h2>Flex Container</h2>
+        <p>Comme on l'a vu il s'agit d'un conteneur flexible avec des éléments flexibles à l'intérieur</p>
+        <p>le conteneur devient flexible en définissant <b>display:flex</b> </p>
+
+        <p>les proprièté CSS que nous utilisons pour le conteneur flex sont:
+        <ul>
+            <li><b>flex-direction</b></li>
+            <li><b>flex-wrap</b></li>
+            <li><b>flex-flow</b></li>
+            <li><b>justify-content</b></li>
+            <li><b>align-items</b></li>
+            <li><b>align-content</b></li>
+        </ul>
+        </p>
+
+        <div>
+            <h3>Flex-direction</h3>
+            <p>La <b>flex-direction</b> spécifie la direction d'affichage des éléments flexibles dans le conteneur
+                flexible.</p>
+            <p>elle peut avoir une des valeurs suivante :
+            <ul>
+                <li><b>row</b></li>
+                <li><b>column</b></li>
+                <li><b>row-reverse</b></li>
+                <li><b>column-reverse</b></li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <h3>Flex-wrap</h3>
+            <p>La <b>flex-wrap</b> spécifie si les éléments flexibles doivent être enveloppé ou non, s'il n'y a pas
+                assez de place pour eux sur une ligne flexible </p>
+            <p>elle peut avoir une des valeurs suivante :
+            <ul>
+                <li><b>nowrap</b></li>
+                <li><b>wrap</b></li>
+                <li><b>wrap-reverse</b></li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <h3>Flex-flow</h3>
+            <p> La <b>flex-flow</b> une propriété abrégée permettant de définir à la fois les propriétés
+                <b>flex-direction</b> et <b>flex-wrap</b></p>
+        </div>
+        <div>
+            <h3>justify-content</h3>
+            <p>La <b>justify-content</b> est utilisée pour aligner les éléments flexibles lorsqu'ils n'utilisent pas
+                tout l'espace disponible sur l'axe principal (horizontalement).</p>
+            <p>elle peut avoir l'une des valeurs suivantes:
+            <ul>
+                <li><b>center</b></li>
+                <li><b>flex-start</b></li>
+                <li><b>flex-end</b></li>
+                <li><b>space-around</b></li>
+                <li><b>space-between</b></li>
+                <li><b>space-evenly</b></li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <h3>align-items</h3>
+            <p>la <b>align-items</b> est utilisée pour aligner les élément flexible lorsqu'ils n'utilisent pas tout
+                l'espace disponible sur l'axe transversal(verticalement )</p>
+            <p>elle peut avoir l'une des valeurs suivantes:
+            <ul>
+                <li><b>center</b></li>
+                <li><b>flex-start</b></li>
+                <li><b>flex-end</b></li>
+                <li><b>stretch</b></li>
+                <li><b>baseline</b></li>
+                <li><b>normal</b></li>
+            </ul>
+            </p>
+        </div>
+        <div>
+            <h3>align-content</h3>
+            <p>la <b>align-content</b> est utilisée pour aligner les lignes flexibles</p>
+            <p>elle est similaire à <b>align-items</b> mais au lieu d'aligner les éléments flexibles, elle aligne les
+                lignes flexibles
+            <p>Elle peux avoir l'une des valeurs suivantes
+            <ul>
+                <li><b>center</b></li>
+                <li><b>stretch</b></li>
+                <li><b>flex-start</b></li>
+                <li><b>flex-end</b></li>
+                <li><b>space-around</b></li>
+                <li><b>space-between</b></li>
+                <li><b>space-evenly</b></li>
+
+            </ul>
+            </p>
+            </p>
+        </div>
+    </div>
+
+<div>
+    <h2>Flex-items</h2>
+    <p>Les propriéte que nous utilisons pour les élément flexible sont 
+        <ul>
+            <li><b>order</b></li>
+            <li><b>flex-grow</b></li>
+            <li><b>flex-shrink</b></li>
+            <li><b>flex-basis</b></li>
+            <li><b>flex</b></li>
+            <li><b>align-self</b></li>
+        </ul>
+    </p>
+    <div>
+        <h3>order</h3>
+        <p>spécifie l'ordre des éléments flexibles à l'intérieur du conteneur flexible.</p>
+        <p>Exemple :  style:"order 3" il sera possitioner en 3ème</p>
+    </div>
+    <div>
+        <h3>flex-grow</h3>
+        <p>spécifie dans quelle mesure un élément flexible va croître par rapport au reste des éléments flexibles fonctionne un peu comme colspan</p>
+        <p>Faites en sorte que le troisième élément flexible se développe huit fois plus vite que les autres éléments flexibles :</p>
+        <p>Exemple : style="flex-grow:8"</p>
+    </div>
+    <div>
+        <h3>flex-shrink</h3>
+        <p>spécifie dans quelle mesure un élément flexible va rétrécir par rapport au reste des éléments flexibles.</p>
+    </div>
+    <div>
+        <h3>flex-basis</h3>
+        <p>la <b>flex-basis</b> spécifie la longueur initiale d'un élément flexible.</p>
+    </div>
+    <div>
+        <h3>Flex </h3>
+        <p>est une propriété abrégée pour les propriétés <b>flex-grow</b>, <b>flex-shrink</b>, <b>flex-basis</b> </p>
+    </div>
+    <div>
+        <h3>align-self</h3>
+        <p> spécifie l'alignement de l'élément sélectionné à l'intérieur du conteneur flexible.</p>
+        <p>remplace l'alignement par défaut défini par la <b>align-items</b> propriété du conteneur.</p>
+    </div>
+
+</div>
+
+
+</body>
+
+</html>

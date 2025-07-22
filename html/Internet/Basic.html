@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic</title>
+</head>
+
+<body>
+    <h1>Connaissance basic sur Internet</h1>
+    <p>Chaque site web est composé de 2 élément : <b> un serveur web et un nom de domaine </b> </p>
+    <div>
+        <p>Terminologie</p>
+        <ul>
+            <li>Paquet : une petite unité de données transmise sur Internet.</li>
+            <li>Routeur : Un appareil qui dirige les paquets de données entre différents réseaux.</li>
+            <li>Adresse IP : identifiant unique attribué à chaque appareil sur un réseau, utilisé pour acheminer les
+                données vers la bonne destination.</li>
+            <li>Nom de domaine : un nom lisible par l’homme utilisé pour identifier un site Web, tel que google.com.
+            </li>
+            <li>DNS : Le système de noms de domaine est responsable de la traduction des noms de domaine en adresses IP.
+            </li>
+            <li>HTTP : Le protocole de transfert hypertexte est utilisé pour transférer des données entre un client (tel
+                qu'un navigateur Web) et un serveur (tel qu'un site Web).</li>
+            <li>HTTPS : une version cryptée de HTTP utilisée pour fournir une communication sécurisée entre un client et
+                un serveur.</li>
+            <li>SSL/TLS : les protocoles Secure Sockets Layer et Transport Layer Security sont utilisés pour fournir une
+                communication sécurisée sur Internet.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Comment fonctionne internet ?</h2>
+        <h3>How does internet work ?</h3>
+        <p>Internet est un fil il permet de relier plusieurs ordinateur entre eux </p>
+        <p>Les info sur internet circule d'un ordinateur a un autre sous forme de bits sur divers supports, notamment
+            les câbles Ethernet, les câbles a fibre optique et les signaux sans fil (onde radio) </p>
+    </div>
+
+    <div>
+        <h2>What is HTTP ?</h2>
+        <p>C’est la langue que parlent ton navigateur (Chrome, Safari, etc.) et les serveurs web pour s’envoyer des
+            informations.</p>
+        <p>C’est grâce à HTTP que tout le web fonctionne : chaque fois que tu visites un site, ton navigateur utilise
+            HTTP.</p>
+
+        <ol>
+            <li>Quand tu tapes une adresse dans ton navigateur (ex: www.google.com), il envoie une requête HTTP au
+                serveur.</li>
+            <li>Le serveur web (un ordinateur spécialisé qui héberge le site) reçoit ta demande. Il vérifie si la page
+                existe, puis il prépare une réponse HTTP.</li>
+            <li>Le serveur te répond avec : de statut (ex : 200 = succès, 404 = page introuvable) Le contenu demandé
+                (HTML, image, JSON, etc.)</li>
+        </ol>
+        <p>Méthode HTTP : </p>
+        <ul>
+            <li>Get : obtient des données (ex: page web)</li>
+            <li>Post : Envoyer des données</li>
+            <li>Put : Mettre a jour une ressource </li>
+            <li>Delete : supprimer une ressource</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Les paquets</h3>
+        <p>sur internet quand tu envoie une info (page web, video, message) elle ne voyage pas d'un seul bloc</p>
+        <p>elle est découper en petite info appelé paquets</p>
+    </div>
+
+    <div>
+        <h3>le routage</h3>
+        <p>chaque paquet est envoyé individuellement, et peut prendre un chemin différent pour arriver à destination.
+        </p>
+    </div>
+
+
+    <div>
+        <h2>What is Domaine Name</h2>
+        <p>domaine name c'est le nom visible de notre site web mais en version facile à retenir</p>
+        <p>sans domaine name on devrais retenir l'IP du site</p>
+        <p>lors d'une requête on va voir le serveur DNS pour lui demander si ce nom existe il va voir toute les ip add
+            enregistrer puis connecte a celui requis</p>
+        <p>Un nom de domaine est composé d'un nom unique et d'une extension</p>
+        <p>
+        <ul>
+            <li>www : le sous domaine</li>
+            <li>google: le nom du site</li>
+            <li>.com : l'extension (appeler TLD, Top-level Domain)</li>
+        </ul>
+        </p>
+        <p>Les noms de domaine sont achetés ou loués auprès de bureaux d’enregistrement (comme OVH, GoDaddy, Google
+            Domains…). Une fois que tu en possèdes un, tu peux : Créer un site web Associer des e-mails (ex :
+            contact@monsite.fr) Le rediriger vers un autre site</p>
+    </div>
+
+    <div>
+        <h3>What is hosting : hébergement Web</h3>
+        <p>def: Pour qu'un site web soit fonctionnel deux étape sont nécessaire : Enregistrer <strong>un nom de domaine
+                et souscrire à un hébergement</strong>, ces deux éléments sont essentiels et votre site web ne pourra
+            pas exister sans eux</p>
+        <p>Lorsque votre site web est uniquement héberger sur votre ordinateur les autres n'y ont pas accès.</p>
+        <p>l'hébergement web est le service qui vous permet de louer un espace sur internet pour le contenue de votre
+            site pour le rendre accesible au monde entier</p>
+        <p>Principaux type d'hébergement web :
+        <ul>
+            <li>hébergement mutualisé </li>
+            <li>hébergement dédiée</li>
+            <li>serveur privé virtuel (VPS)</li>
+            <li>hébergement revendeur</li>
+            <li>Hébergement cloud</li>
+        </ul>
+        </p>
+        <div>
+            <h3>Comment fonctionne l'hébergement Web</h3>
+
+            <p>une fois le <b>le nom de domaine enregistrer</b> les fichiers qui contiennent le contenu de votre site
+                web(HTML, CSS, etc..) doivent être stockée ensemble dans un emplacement connecté à internet : <b>Un
+                    serveur web</b> </p>
+            <p>L'hébergement web consiste à télécharger les fichiers d'un site web depuis un ordinateur local vers un
+                serveur web, puis à les publier en ligne. Les ressources du serveur, notamment le processeur, la RAM,
+                l'espace disque et la bande passante, sont allouées aux sites web qu'il héberge</p>
+            <p></p>
+        </div>
+
+        <div>
+            <h3>Hébergement Web partagé</h3>
+            <p>Lorsqu'un seul serveur physique héberge plusieurs sites web, on parle d'hébergement mutualisé </p>
+        </div>
+
+        <div>
+            <h3>Hébergement VPS</h3>
+            <p>est un type d'hébergement où un serveur physique est divisé par un logiciel de virtualisation et attribué
+                à différents clients. Ainsi, chaque utilisateur dispose d'un serveur virtuel isolé des autres</p>
+        </div>
+
+        <div>
+            <h3>Hébergement dédié</h3>
+            <p>est l'option la plus puissante et la plus efficace. Un serveur physique complet et toutes ses ressources
+                sont alloués à un seul client</p>
+        </div>
+
+        <div>
+            <h3>Hébergement cloud</h3>
+            <p>Il s'agit du dernier type d'hébergement sur le marché, qui a connu un succès considérable ces dernières
+                années. La technologie cloud consiste à répartir les données sur plusieurs serveurs virtuels qui forment
+                le cloud. L'hébergement cloud rend toute application web ou site web accessible via un réseau cloud,
+                offrant ainsi une flexibilité, des performances et une rapidité accruesx²</p>
+        </div>
+
+        <div>
+            <h3>Hébergement revendeur</h3>
+            <p>L'hébergement web où le propriétaire du compte peut mettre son espace disque dur et sa bande passante à
+                disposition pour héberger des sites web tiers est appelé hébergement revendeur . Le propriétaire initial
+                du compte d'hébergement est le « revendeur ». </p>
+        </div>
+    </div>
+
+    <div>
+        <h2>DNS</h2>
+        <h4>What is DNS ?</h4>
+        <p>Le système DNS est un annuaire téléphonique pour internet, les utilisateurs accèdent aux information en ligne
+            via des <b>Nom de domaine</b></p>
+        <p>Les navigateurs interagissent via des add IP.</p>
+        <p>Le dns traduit c'est <b>Nom de domaine</b> en IP afin que les navigateurs puissent accèder aux ressource
+            d'internet. </p>
+        <p>Le processus de résolution DNS consiste à convertir un nom d'hôte en une adresse IP conviviale</p>
+
+        <div>
+            <h3>Comment fonctionne le DNS ?</h3>
+            <p>Le processus de résolution DNS consiste à convertir un nom d'<b>hôte</b> en une IP</p>
+            <p>Lorsqu'un utilisateur souhaite consulter une page web, une conversion doit être effectuée entre ce qu'il
+                saisit dans son navigateur et l'adresse conviviale nécessaire pour localiser la page web</p>
+        </div>
+
+        <div>
+            <h3>4 serveur DNS impliqué dans le chargement d'une page web</h3>
+            <p>
+            <ul>
+                <li> Récurseur DNS </li>
+            </ul>
+            chargé de rechercher un livre spécifique dans une bibliothèque. Le récurseur DNS est un serveur conçu pour
+            recevoir les requêtes des ordinateurs clients via des applications telles que des navigateurs web
+            </p>
+
+            <p>
+            <ul>
+                <li>serveur racine</li>
+            </ul>
+            est la première étape de la traduction (résolution) des noms d'hôtes lisibles par l'homme en adresses IP. Il
+            peut être comparé à l'index d'une bibliothèque pointant vers différents rayonnages de livres ; il sert
+            généralement de référence à des emplacements plus spécifiques
+            </p>
+
+            <p>
+            <ul>
+                <li>Serveur de noms TLD</li>
+            </ul>
+            Le serveur de domaine de premier niveau ( TLD ) peut être comparé à un rayonnage de livres dans une
+            bibliothèque. Ce serveur de noms constitue l'étape suivante dans la recherche d'une adresse IP spécifique et
+            héberge la dernière partie d'un nom d'hôte (dans example.com, le serveur TLD est « com »).
+            </p>
+
+            <p>
+            <ul>
+                <li>Serveur de noms faisant autorité</li>
+            </ul>
+            ce serveur de noms final peut être comparé à un dictionnaire sur une étagère, dans lequel un nom spécifique
+            peut être traduit en sa définition. Le serveur de noms faisant autorité est le dernier point de la requête.
+            Si le serveur de noms faisant autorité a accès à l'enregistrement demandé, il renvoie l'adresse IP du nom
+            d'hôte demandé au récurseur DNS (le bibliothécaire) ayant effectué la requête initiale.
+            </p>
+        </div>
+
+        <div>
+            <h2>Navigateur Web</h2>
+            <p>tout le monde doit utiliser un navigateur web pour accéeder à internet et y établir leur présence</p>
+            <p>Le dev Web repose entièrement sur c'est le concept de navigateur web</p>
+            <div>
+                <h3>Qu'est ce qu'un navigateur Web?</h3>
+                <p>Un navigateur Web est un logiciel qui permet à un utilisateur d’accéder à des informations sur
+                    Internet via le World Wide Web.</p>
+            </div>
+            <div>
+                <h3>Composant : </h3>
+                <h4>Moteur de rendu - L'architecture Web</h4>
+                <p>Il s'agit du composant principal d'un navigateur web qui convertit le code du site web en éléments
+                    visuels visibles sur une page web Le moteur de rendu reçoit les instructions du navigateur, les
+                    interprète et crée une page web en conséquence</p>
+                <p>
+                <ul>
+                    <li>Blink : ce moteur alimente <b>google chrome</b> </li>
+                    <li>WebKit: utilisée dans <b>Safari</b> </li>
+                    <li>Gecko : utilisée par <b>mozilla firefox</b></li>
+                </ul>
+                </p>
+
+                <div>
+                    <h4>Interface utilisateur (IU) :</h4>
+                    <p>Vous interagissez directement avec elle. Elle comprend la barre d'adresse, où vous saisissez les
+                        adresses des sites web etc...</p>
+                </div>
+
+                <div>
+                    <h4>Moteur de rendu: </h4>
+                    <p>l'architecte est responsable de la construction de la représentation visuelle de la page Web</p>
+                </div>
+
+                <div>
+                    <h4>Composant réseau :</h4>
+                    <p> il récupère les fichiers du site Web (code, images, vidéos) à partir des serveurs Web du monde entier, garantissant que tous les éléments nécessaires sont livrés au moteur de rendu pour créer la page Web</p>
+                </div>
+
+                <div>
+                    <h4>Moteur JavaScript :</h4>
+                    <p>il interprète et exécute le code JavaScript, permettant aux pages Web de répondre aux actions des utilisateurs et de créer des expériences dynamiques .</p>
+                </div>
+
+                <div>
+                    <h4>Composants de sécurité </h4>
+                    <p> ils gèrent des tâches telles que le cryptage des transmissions de données (HTTPS) et vous protègent contre les sites Web malveillants.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

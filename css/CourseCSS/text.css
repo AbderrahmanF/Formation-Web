@@ -1,0 +1,14 @@
+b{
+    color: red;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: purple;
+    text-shadow: 2px 2px 4px purple;
+}
+
+strong{
+    text-decoration-line: underline;   
+}

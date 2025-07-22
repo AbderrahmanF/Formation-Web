@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+</head>
+<body>
+    <h1>CSS Combinators</h1>
+
+    <p>A CSS selector can contain more than one simple selector. Between the simple selector, we can include a combinator.</p>
+    <p>There are four different Combinators in CSS: <ul>
+        <li>Descendant combinator (space)</li>
+        <li>child combinator (>)</li>
+        <li>Next siblling combinator (+)</li>
+        <li>Subsequent-sibling combinator (~)</li>
+    </ul></p>
+    <div>
+        <h2>Descendant Combinator</h2>
+        <p>Le combinateur Descendant correspond à tous les éléments qui sont les Descendants d'un élément spécifié</p>
+        <p>Par exemple une balise &lt;p&gt; à l'intérieur d'une balise &lt;div&gt; la balise p descend de div</p>
+        <p>la syntax est <strong>div p {}</strong></p>
+    </div>
+    <div>
+        <h2>Child Combinator (>) </h2>
+        <p>Le combinateur enfant sélectionne tous les élements qui sont les enfant d'un éléments spécifié</p>
+        <p> exemple : <strong>div > p</strong>  ce selecteur sélectionne tout les element p enfant d'un element div si par exemple j'ai une à l'intérieur du div une balise section et qu'a l'interieur de cette balise j'ai un div ce selecteur ne prendra pas en compte ce p</p>
+    </div>
+    <div>
+        <h2>Next siblling Combinator (+)</h2>
+        <p>Le combinateur frère suivant est utilisé pour sélectionner un élement qui se trouve directement après un autre élément spécifique.</p>
+        <p>Les éléments frère doivent avoir le même élément parent, et " adjacent " immédiatement suivant.</p>
+        <p>Exemple: <strong>div + p {}</strong> selectionne le premier élement &lt;p&gt; placé immédiatement après les élement &lt;div&gt;</p>
+    </div>
+    <div>
+        <h2>Subsequent-sibling combinator (~)</h2>
+        <p>Le combinateur de frère et soeur suivant sélectionne tous les élements qui sont frère et soeur suivant d'un élement spécifié</p>
+       <p> cible tous les &lt;p&gt; qui suivent le &lt;div&gt; et qui partagent le même parent. </p>
+    </div>
+</body>
+</html>

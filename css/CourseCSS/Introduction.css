@@ -1,0 +1,22 @@
+body{
+background-color: antiquewhite;    
+}
+
+
+.titre-page{
+    text-align: center;
+    
+}
+
+abbr{
+    text-decoration: none; 
+}
+
+.desc{
+    text-align: center;
+}
+
+table{
+    width: 50%;
+    margin: auto;
+}

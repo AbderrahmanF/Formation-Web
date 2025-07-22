@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text</title>
+    <link rel="stylesheet" href="../../css/CourseCSS/text.css">
+</head>
+
+<body>
+    <h1>CSS Text</h1>
+    <p>CSS has a lot of properties for formatting text.</p>
+
+    <div>
+        <h2>Text color</h2>
+        <p>The <b>color</b> property is used to set the color</p>
+    </div>
+
+    <div>
+        <h2>Text alignment & Text Direction</h2>
+        <p>
+        <ul>
+            <li><b>text-align</b></li>
+            <li><b>text-align-last</b></li>
+            <li><b>direction</b></li>
+            <li><b>unicode-bidi</b></li>
+            <li><b>vertical-align</b></li>
+        </ul>
+        </p>
+        <div>
+            <h3>text-alignment</h3>
+            <p>The <b>text-align</b> property is used to set the horizontal alignment of a text</p>
+            <p>When the <b>text-align</b> property is set to "justify", each line is stretched so that every line has
+                equal width, and the left and right margins are straight (like in magazines and newspapers): </p>
+        </div>
+        <div>
+            <h3>Text align last</h3>
+            <p>The <b>text-align-last</b> property specifies how to align the last line of a text</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Text Direction</h2>
+        <p>The <b>direction</b> and <b>unicode-bidi</b> properties can be used to change the text direction of an
+            element</p>
+        <p>the direction can be used with 2 value <b>RTL</b> or <b>LTR</b> </p>
+    </div>
+
+    <div>
+        <h2>Vertical alignment</h2>
+        <p>The <b>vertical-align</b> property sets the vertical alignment of an element
+        <ul> the different value is
+            <li><b>baseline</b></li>
+            <li><b>text-top</b></li>
+            <li><b>text-bottom</b></li>
+            <li><b>sub</b></li>
+            <li><b>super</b></li>
+        </ul>
+        </p>
+    </div>
+
+    <div>
+        <h2>Text Decoration</h2>
+        <p>the different proprety of text decoration is
+        <ul>
+            <li><b>text-decoration-line</b></li>
+            <li><b>text-decoration-color</b></li>
+            <li><b>text-decoration-style</b></li>
+            <li><b>text-decoration-thickness</b></li>
+            <li><b>text-decoration</b></li>
+        </ul>
+        </p>
+
+        <div>
+            <h3>ADD a decoration line to text</h3>
+            <p>The <b>text-decoration-line</b> property is used to add a decoration line to text</p>
+            <p> <strong> Tips: It is not recommended to underline text that is not a link, as this often confuses the
+                    reader.</strong> </p>
+            <p>to specify a color for the decoration line</p>
+            <p>The <b>text-decoration-color</b> property is used to set the color of the decoration line</p>
+            <p>To specify a style for the decoration Line use : </p>
+            <p>The <b>text-decoration-style</b> property is used to set the style of the decoration line the value is
+                the same of <b>border-style</b></p>
+            <p>To specify the thickness for the decoration line</p>
+            <p>The <b>text-decoration-thickness</b> property is used to set the thickness of the decoration line</p>
+
+            <div>
+                <h3>The Shorthand Property</h3>
+                <p>The <b>text-decoration</b> property is a shorthand property for :
+                <ul>
+                    <li><b>text-decoration-line</b> (required)</li>
+                    <li><b>text-decoration-color</b> (optional)</li>
+                    <li><b>text-decoration-style</b> (optional)</li>
+                    <li><b>text-decoration-thickness</b> (optional)</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div>
+            <h3>A small Tips</h3>
+            <p>All links in HTML are underlined by default.</p>
+            <p> Sometimes you see that links are styled with no underline. The <b>text-decoration: none;</b> is used to
+                remove the underline from links</p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Text Transformation</h2>
+        <p>The <b>text-transform</b> property is used to specify uppercase, lowercase and capitalize letters in a text.
+        </p>
+        <p></p>
+    </div>
+
+    <div>
+        <h2>Text spacing</h2>
+        <p>The different property of text spacing :
+        <ul>
+            <li><b>text-indent</b></li>
+            <li><b>letter-spacing</b></li>
+            <li><b>line-height</b></li>
+            <li><b>word-spacing</b></li>
+            <li><b>white-space</b></li>
+        </ul>
+        </p>
+        <div>
+            <h3>Text indent</h3>
+            <p>The <b>text-indent</b> property is used to specify the indentation of the first line of a text</p>
+
+            <h3>Letter Spacing</h3>
+            <p>The <b>letter-spacing</b> property is used to specify the space between the characters in a text</p>
+
+            <h3>Line Height</h3>
+            <p>The <b>line-height</b> property is used to specify the space between lines.</p>
+
+            <h3>Word spacing</h3>
+            <p>The <b>word-spacing</b> property is used to specify the space between the words in a text</p>
+
+            <h3>White Space</h3>
+            <p>The <b>white-space</b> property specifies how white-space inside an element is handled </p>
+        </div>
+    </div>
+
+    <div>
+        <h2>Text Shadow</h2>
+        <p>The <b>text-shadow</b> property adds shadow to text.</p>
+        <p>In its simplest use, you only specify the horizontal shadow, the vertical shadow, the blur (effet de flou) and the color </p>
+        <p>Example double neon : <strong>text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; </strong></p>
+        <p>Other Example beautiful : <strong>color: white; text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; </strong></p>
+    </div>
+
+        
+
+
+
+</body>
+
+</html>

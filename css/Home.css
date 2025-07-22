@@ -1,0 +1,21 @@
+html {
+    font-size: 22px;
+}
+body{
+    background-color: #FFF;
+    color: black;
+}
+
+h1{
+    text-align: center;
+} 
+
+.definition{
+    background-color: #4CAF50;
+    color: black;
+    border-radius:5px;
+    margin:auto 30%;
+    text-align: center;
+}
+
+
