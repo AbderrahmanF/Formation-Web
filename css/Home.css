@@ -1,14 +1,157 @@
-html {
-    font-size: 22px;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
 }
+
 body{
-    background-color: #FFF;
+    /* TODO : Définir la police géneral de mon site */
+
     color: black;
 }
 
+/* Navigation */
+nav{
+    position: relative;
+    background-color:#333;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 20px;
+    margin-bottom:50px;;
+}
+
+nav li{
+    display: inline-block;
+    padding: 0 30px;
+    text-align:center;   
+}
+
+nav li a{
+    color: white;
+    
+}
+
+nav li a:hover{
+    color: aqua;
+}
+    
+.logo{
+    position: absolute;
+    color: white;
+    right: 0;
+    top: 35%;
+}
+
+/* Fin de la navigation */
+
+
 h1{
     text-align: center;
-} 
+    color: black;
+    font-size: 60px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+
+.introduction{
+  
+    text-align:justify;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 70px;
+    box-shadow: 2px 2px 3px 10px #eee;
+}
+
+h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
+
+/* Contenu principal */
+main{
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+article{
+    padding: 50px;
+    margin-bottom: 100px;
+}
+
+
+
+/* A propos de l'auteur */
+.aPropos {
+width: 70%;
+border-left: 5px solid black ;
+background-color: #eeeeee;
+}
+
+ p, ul{
+    margin-left:  20px;
+}
+
+
+img{
+   float: right;
+    width: 250px;
+    height: 200px; 
+}
+/* Fin de la section A propos de l'auteur */
+
+
+/* Section conseils */
+.conseils{   
+width: 80%;
+margin-left: 180px;
+background-color: #eeeeee;
+border-right: 5px solid black;
+
+}
+
+
+.conseils li{
+    padding: 12px;
+}
+
+/* Fin de la Section conseils */
+
+
+/* Prerequis */
+
+.prerequis{
+    background-color: #eeeeee;
+    border-left: 5px solid black;
+}
+
+.prerequis ul{
+    list-style-type:none;
+    padding: 20px;
+}
+
+.prerequis li{
+    padding: 10px;
+}
+
+.prerequis a{
+    color: black;
+}
+
+.prerequis a:hover{
+    color: #4CAF50;
+}
+
+
+/* Fin de la section Prerequis */
+
+
+
+
 
 .definition{
     background-color: #4CAF50;
@@ -19,3 +162,25 @@ h1{
 }
 
 
+/* fin du contenu principal */
+
+
+/*Footer */
+footer{
+background-color: #333333;
+color: white;
+text-align: center;
+padding: 30px;
+}
+
+footer a{
+    color: antiquewhite;
+}
+
+footer p{
+padding: 10px;
+}
+
+footer a:hover{
+    color: #4CAF50;
+}
